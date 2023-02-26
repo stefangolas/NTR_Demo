@@ -1,0 +1,1170 @@
+[2023-02-25 22:06:16,893] root INFO #################################################################
+[2023-02-25 22:06:16,893] root INFO #                                                               #
+[2023-02-25 22:06:16,893] root INFO #     Begin execution of C:\Users\stefa\ntr_john\NTR\ntr.py     #
+[2023-02-25 22:06:16,893] root INFO #                                                               #
+[2023-02-25 22:06:16,893] root INFO #################################################################
+[2023-02-25 22:06:16,893] pyhamilton.interface INFO starting a Hamilton interface
+[2023-02-25 22:06:16,893] pyhamilton.interface INFO started the oem application for simulation
+[2023-02-25 22:06:16,893] pyhamilton.interface INFO started the server thread
+[2023-02-25 22:06:16,894] root INFO tip_pick_up_96: Pick up tips at TIP_50ul_L_NE_stack_0001_0004
+[2023-02-25 22:06:19,902] root INFO tip_pick_up_96: Pick up tips at TIP_50ul_L_NE_stack_0002_0004
+[2023-02-25 22:06:22,982] root INFO get_plate: Getting plate TIP_50ul_L_NE_stack_0001_0004
+[2023-02-25 22:06:25,985] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-25 22:06:26,987] root INFO get_plate: Getting plate TIP_50ul_L_NE_stack_0002_0004
+[2023-02-25 22:06:28,988] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-25 22:06:29,989] root INFO tip_eject_96: Eject tips to default waste
+[2023-02-25 22:06:31,991] root INFO tip_pick_up_96: Pick up tips at TIP_50ul_L_NE_stack_0001_0003
+[2023-02-25 22:06:34,006] root INFO tip_pick_up_96: Pick up tips at TIP_50ul_L_NE_stack_0002_0003
+[2023-02-25 22:06:37,014] root INFO get_plate: Getting plate TIP_50ul_L_NE_stack_0001_0003
+[2023-02-25 22:06:39,016] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-25 22:06:41,017] pyhamilton.interface INFO sending end run command to simulator
+[2023-02-25 22:06:42,518] pyhamilton.interface ERROR HamiltonTimeoutError('Timed out after 1.5 sec while waiting for response id 0x0')
+[2023-02-25 22:06:42,518] pyhamilton.interface INFO disconnected from server
+[2023-02-25 22:06:42,626] pyhamilton.interface INFO server did not exit yet, sending dummy request to exit its loop
+[2023-02-25 22:06:42,626] urllib3.util.retry DEBUG Converted retries value: 20 -> Retry(total=20, connect=None, read=None, redirect=None, status=None)
+[2023-02-25 22:06:42,628] urllib3.connectionpool DEBUG Starting new HTTP connection (1): 127.0.0.1:3221
+[2023-02-25 22:06:42,629] urllib3.connectionpool DEBUG http://127.0.0.1:3221 "GET / HTTP/1.1" 200 None
+[2023-02-25 22:06:42,630] pyhamilton.interface INFO dummy get request sent to server
+[2023-02-25 22:06:42,630] pyhamilton.interface INFO server thread exited
+[2023-02-25 22:06:42,630] root ERROR Traceback (most recent call last):
+[2023-02-25 22:06:42,631] root ERROR   File "C:\Users\stefa\ntr_john\NTR\ntr.py", line 68, in <module>
+[2023-02-25 22:06:42,631] root ERROR tip_tracker_NTR50_MPH.get_96_tips()
+[2023-02-25 22:06:42,632] root ERROR   File "C:\Users\stefa\ntr_john\NTR\tip_tracker\TipTracker.py", line 381, in get_96_tips
+[2023-02-25 22:06:42,632] root ERROR self.discard_empty_racks()
+[2023-02-25 22:06:42,634] root ERROR   File "C:\Users\stefa\ntr_john\NTR\tip_tracker\TipTracker.py", line 362, in discard_empty_racks
+[2023-02-25 22:06:42,635] root ERROR place_plate_gripper_seq(self.hamilton_interface, self.waste_seq, self.tool_seq)
+[2023-02-25 22:06:42,635] root ERROR   File "c:\users\stefa\pyhamilton\pyhamilton\liquid_handling_wrappers.py", line 291, in place_plate_gripper_seq
+[2023-02-25 22:06:42,635] root ERROR ham.wait_on_response(cid, raise_first_exception=True, timeout=120)
+[2023-02-25 22:06:42,636] root ERROR   File "c:\users\stefa\pyhamilton\pyhamilton\interface.py", line 657, in wait_on_response
+[2023-02-25 22:06:42,636] root ERROR return self.parse_response(server_response, raise_first_exception, return_data)
+[2023-02-25 22:06:42,637] root ERROR ^
+[2023-02-25 22:06:42,637] root ERROR ^
+[2023-02-25 22:06:42,637] root ERROR ^
+[2023-02-25 22:06:42,637] root ERROR ^
+[2023-02-25 22:06:42,637] root ERROR ^
+[2023-02-25 22:06:42,637] root ERROR ^
+[2023-02-25 22:06:42,637] root ERROR ^
+[2023-02-25 22:06:42,637] root ERROR ^
+[2023-02-25 22:06:42,637] root ERROR ^
+[2023-02-25 22:06:42,637] root ERROR ^
+[2023-02-25 22:06:42,637] root ERROR ^
+[2023-02-25 22:06:42,637] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,638] root ERROR ^
+[2023-02-25 22:06:42,640] root ERROR   File "c:\users\stefa\pyhamilton\pyhamilton\interface.py", line 676, in parse_response
+[2023-02-25 22:06:42,640] root ERROR hamiltonResponse.raise_first_exception()
+[2023-02-25 22:06:42,641] root ERROR   File "c:\users\stefa\pyhamilton\pyhamilton\interface.py", line 400, in raise_first_exception
+[2023-02-25 22:06:42,641] root ERROR raise HamiltonStepError('Hamilton step did not execute correctly; no error code given. ( response: ' + self.raw + ' )')
+[2023-02-25 22:06:42,641] root ERROR pyhamilton.oemerr
+[2023-02-25 22:06:42,641] root ERROR .
+[2023-02-25 22:06:42,641] root ERROR HamiltonStepError
+[2023-02-25 22:06:42,641] root ERROR : 
+[2023-02-25 22:06:42,641] root ERROR Hamilton step did not execute correctly; no error code given. ( response: {"command":"STAR-return","step-name":"gripPlace","step-return1":"2","step-return2":"","step-return3":"","step-return4":"","id":"0x13721aee3055"} )
+[2023-02-25 22:11:17,845] root INFO #################################################################
+[2023-02-25 22:11:17,845] root INFO #                                                               #
+[2023-02-25 22:11:17,845] root INFO #     Begin execution of C:\Users\stefa\ntr_john\NTR\ntr.py     #
+[2023-02-25 22:11:17,846] root INFO #                                                               #
+[2023-02-25 22:11:17,846] root INFO #################################################################
+[2023-02-25 22:11:17,846] pyhamilton.interface INFO starting a Hamilton interface
+[2023-02-25 22:11:17,846] pyhamilton.interface INFO started the oem application for simulation
+[2023-02-25 22:11:17,846] pyhamilton.interface INFO started the server thread
+[2023-02-25 22:11:17,846] root INFO tip_pick_up_96: Pick up tips at TIP_50ul_L_NE_stack_0001_0004
+[2023-02-25 22:11:18,856] root INFO tip_eject_96: Eject tips to default waste
+[2023-02-25 22:11:19,857] root INFO tip_pick_up_96: Pick up tips at TIP_50ul_L_NE_stack_0002_0004
+[2023-02-25 22:11:22,868] root INFO tip_eject_96: Eject tips to default waste
+[2023-02-25 22:11:23,869] root INFO get_plate: Getting plate TIP_50ul_L_NE_stack_0001_0004
+[2023-02-25 22:11:25,871] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-25 22:11:26,872] root INFO get_plate: Getting plate TIP_50ul_L_NE_stack_0002_0004
+[2023-02-25 22:11:29,873] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-25 22:11:33,875] root INFO tip_eject_96: Eject tips to default waste
+[2023-02-25 22:11:35,877] pyhamilton.interface INFO sending end run command to simulator
+[2023-02-25 22:11:37,381] pyhamilton.interface ERROR HamiltonTimeoutError('Timed out after 1.5 sec while waiting for response id 0x0')
+[2023-02-25 22:11:37,381] pyhamilton.interface INFO disconnected from server
+[2023-02-25 22:11:37,482] pyhamilton.interface INFO server did not exit yet, sending dummy request to exit its loop
+[2023-02-25 22:11:37,482] urllib3.util.retry DEBUG Converted retries value: 20 -> Retry(total=20, connect=None, read=None, redirect=None, status=None)
+[2023-02-25 22:11:37,482] urllib3.connectionpool DEBUG Starting new HTTP connection (1): 127.0.0.1:3221
+[2023-02-25 22:11:37,486] urllib3.connectionpool DEBUG http://127.0.0.1:3221 "GET / HTTP/1.1" 200 None
+[2023-02-25 22:11:37,486] pyhamilton.interface INFO dummy get request sent to server
+[2023-02-25 22:11:37,487] pyhamilton.interface INFO server thread exited
+[2023-02-25 22:11:37,487] root ERROR Traceback (most recent call last):
+[2023-02-25 22:11:37,487] root ERROR   File "C:\Users\stefa\ntr_john\NTR\ntr.py", line 69, in <module>
+[2023-02-25 22:11:37,487] root ERROR tip_eject_96(ham_int)
+[2023-02-25 22:11:37,487] root ERROR   File "c:\users\stefa\pyhamilton\pyhamilton\liquid_handling_wrappers.py", line 233, in tip_eject_96
+[2023-02-25 22:11:37,487] root ERROR ham_int.wait_on_response(ham_int.send_command(EJECT96,
+[2023-02-25 22:11:37,488] root ERROR   File "c:\users\stefa\pyhamilton\pyhamilton\interface.py", line 657, in wait_on_response
+[2023-02-25 22:11:37,488] root ERROR return self.parse_response(server_response, raise_first_exception, return_data)
+[2023-02-25 22:11:37,488] root ERROR ^
+[2023-02-25 22:11:37,488] root ERROR ^
+[2023-02-25 22:11:37,488] root ERROR ^
+[2023-02-25 22:11:37,488] root ERROR ^
+[2023-02-25 22:11:37,488] root ERROR ^
+[2023-02-25 22:11:37,488] root ERROR ^
+[2023-02-25 22:11:37,488] root ERROR ^
+[2023-02-25 22:11:37,488] root ERROR ^
+[2023-02-25 22:11:37,488] root ERROR ^
+[2023-02-25 22:11:37,488] root ERROR ^
+[2023-02-25 22:11:37,488] root ERROR ^
+[2023-02-25 22:11:37,488] root ERROR ^
+[2023-02-25 22:11:37,488] root ERROR ^
+[2023-02-25 22:11:37,488] root ERROR ^
+[2023-02-25 22:11:37,488] root ERROR ^
+[2023-02-25 22:11:37,488] root ERROR ^
+[2023-02-25 22:11:37,488] root ERROR ^
+[2023-02-25 22:11:37,488] root ERROR ^
+[2023-02-25 22:11:37,488] root ERROR ^
+[2023-02-25 22:11:37,488] root ERROR ^
+[2023-02-25 22:11:37,488] root ERROR ^
+[2023-02-25 22:11:37,488] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,489] root ERROR ^
+[2023-02-25 22:11:37,490] root ERROR ^
+[2023-02-25 22:11:37,490] root ERROR ^
+[2023-02-25 22:11:37,490] root ERROR ^
+[2023-02-25 22:11:37,490] root ERROR ^
+[2023-02-25 22:11:37,490] root ERROR ^
+[2023-02-25 22:11:37,490] root ERROR ^
+[2023-02-25 22:11:37,490] root ERROR ^
+[2023-02-25 22:11:37,490] root ERROR ^
+[2023-02-25 22:11:37,490] root ERROR ^
+[2023-02-25 22:11:37,490] root ERROR ^
+[2023-02-25 22:11:37,490] root ERROR ^
+[2023-02-25 22:11:37,491] root ERROR   File "c:\users\stefa\pyhamilton\pyhamilton\interface.py", line 676, in parse_response
+[2023-02-25 22:11:37,491] root ERROR hamiltonResponse.raise_first_exception()
+[2023-02-25 22:11:37,494] root ERROR   File "c:\users\stefa\pyhamilton\pyhamilton\interface.py", line 404, in raise_first_exception
+[2023-02-25 22:11:37,494] root ERROR raise HamiltonReturnParseError(self.raw)
+[2023-02-25 22:11:37,494] root ERROR pyhamilton.oemerr
+[2023-02-25 22:11:37,495] root ERROR .
+[2023-02-25 22:11:37,495] root ERROR HamiltonReturnParseError
+[2023-02-25 22:11:37,495] root ERROR : 
+[2023-02-25 22:11:37,495] root ERROR {"command":"STAR-return","step-name":"mph96TipEject","step-return1":"0[01,00,00,0,0.0,,","step-return2":"","step-return3":"","step-return4":"","id":"0x13722c816161"}
+[2023-02-26 10:07:58,366] root INFO #################################################################
+[2023-02-26 10:07:58,366] root INFO #                                                               #
+[2023-02-26 10:07:58,367] root INFO #     Begin execution of C:\Users\stefa\ntr_john\NTR\ntr.py     #
+[2023-02-26 10:07:58,367] root INFO #                                                               #
+[2023-02-26 10:07:58,367] root INFO #################################################################
+[2023-02-26 10:07:58,367] pyhamilton.interface INFO starting a Hamilton interface
+[2023-02-26 10:07:58,367] pyhamilton.interface INFO started the oem application for simulation
+[2023-02-26 10:07:58,367] pyhamilton.interface INFO started the server thread
+[2023-02-26 10:07:58,368] root INFO tip_pick_up_96: Pick up tips at TIP_50ul_L_NE_stack_0001_0004
+[2023-02-26 10:08:00,375] root INFO tip_eject_96: Eject tips to default waste
+[2023-02-26 10:08:01,376] root INFO tip_pick_up_96: Pick up tips at TIP_50ul_L_NE_stack_0002_0004
+[2023-02-26 10:08:04,383] root INFO tip_eject_96: Eject tips to default waste
+[2023-02-26 10:08:06,385] root INFO get_plate: Getting plate TIP_50ul_L_NE_stack_0001_0004
+[2023-02-26 10:08:07,388] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 10:08:09,390] root INFO get_plate: Getting plate TIP_50ul_L_NE_stack_0002_0004
+[2023-02-26 10:08:10,391] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 10:08:12,392] root INFO tip_eject_96: Eject tips to default waste
+[2023-02-26 10:08:13,393] pyhamilton.interface INFO sending end run command to simulator
+[2023-02-26 10:08:14,894] pyhamilton.interface ERROR HamiltonTimeoutError('Timed out after 1.5 sec while waiting for response id 0x0')
+[2023-02-26 10:08:14,894] pyhamilton.interface INFO disconnected from server
+[2023-02-26 10:08:14,996] pyhamilton.interface INFO server did not exit yet, sending dummy request to exit its loop
+[2023-02-26 10:08:14,996] urllib3.util.retry DEBUG Converted retries value: 20 -> Retry(total=20, connect=None, read=None, redirect=None, status=None)
+[2023-02-26 10:08:15,007] urllib3.connectionpool DEBUG Starting new HTTP connection (1): 127.0.0.1:3221
+[2023-02-26 10:08:15,008] urllib3.connectionpool DEBUG http://127.0.0.1:3221 "GET / HTTP/1.1" 200 None
+[2023-02-26 10:08:15,008] pyhamilton.interface INFO dummy get request sent to server
+[2023-02-26 10:08:15,008] pyhamilton.interface INFO server thread exited
+[2023-02-26 10:08:15,010] root ERROR Traceback (most recent call last):
+[2023-02-26 10:08:15,010] root ERROR   File "C:\Users\stefa\ntr_john\NTR\ntr.py", line 70, in <module>
+[2023-02-26 10:08:15,012] root ERROR tip_eject_96(ham_int)
+[2023-02-26 10:08:15,013] root ERROR   File "c:\users\stefa\pyhamilton\pyhamilton\liquid_handling_wrappers.py", line 233, in tip_eject_96
+[2023-02-26 10:08:15,019] root ERROR ham_int.wait_on_response(ham_int.send_command(EJECT96,
+[2023-02-26 10:08:15,019] root ERROR   File "c:\users\stefa\pyhamilton\pyhamilton\interface.py", line 657, in wait_on_response
+[2023-02-26 10:08:15,024] root ERROR return self.parse_response(server_response, raise_first_exception, return_data)
+[2023-02-26 10:08:15,025] root ERROR ^
+[2023-02-26 10:08:15,025] root ERROR ^
+[2023-02-26 10:08:15,025] root ERROR ^
+[2023-02-26 10:08:15,025] root ERROR ^
+[2023-02-26 10:08:15,025] root ERROR ^
+[2023-02-26 10:08:15,025] root ERROR ^
+[2023-02-26 10:08:15,025] root ERROR ^
+[2023-02-26 10:08:15,025] root ERROR ^
+[2023-02-26 10:08:15,025] root ERROR ^
+[2023-02-26 10:08:15,025] root ERROR ^
+[2023-02-26 10:08:15,025] root ERROR ^
+[2023-02-26 10:08:15,025] root ERROR ^
+[2023-02-26 10:08:15,025] root ERROR ^
+[2023-02-26 10:08:15,025] root ERROR ^
+[2023-02-26 10:08:15,025] root ERROR ^
+[2023-02-26 10:08:15,025] root ERROR ^
+[2023-02-26 10:08:15,025] root ERROR ^
+[2023-02-26 10:08:15,025] root ERROR ^
+[2023-02-26 10:08:15,025] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,026] root ERROR ^
+[2023-02-26 10:08:15,027] root ERROR ^
+[2023-02-26 10:08:15,027] root ERROR ^
+[2023-02-26 10:08:15,027] root ERROR ^
+[2023-02-26 10:08:15,027] root ERROR ^
+[2023-02-26 10:08:15,027] root ERROR ^
+[2023-02-26 10:08:15,027] root ERROR ^
+[2023-02-26 10:08:15,027] root ERROR ^
+[2023-02-26 10:08:15,027] root ERROR ^
+[2023-02-26 10:08:15,027] root ERROR ^
+[2023-02-26 10:08:15,027] root ERROR ^
+[2023-02-26 10:08:15,027] root ERROR ^
+[2023-02-26 10:08:15,027] root ERROR ^
+[2023-02-26 10:08:15,027] root ERROR ^
+[2023-02-26 10:08:15,027] root ERROR ^
+[2023-02-26 10:08:15,027] root ERROR ^
+[2023-02-26 10:08:15,027] root ERROR ^
+[2023-02-26 10:08:15,027] root ERROR ^
+[2023-02-26 10:08:15,027] root ERROR ^
+[2023-02-26 10:08:15,027] root ERROR ^
+[2023-02-26 10:08:15,027] root ERROR ^
+[2023-02-26 10:08:15,028] root ERROR   File "c:\users\stefa\pyhamilton\pyhamilton\interface.py", line 676, in parse_response
+[2023-02-26 10:08:15,028] root ERROR hamiltonResponse.raise_first_exception()
+[2023-02-26 10:08:15,029] root ERROR   File "c:\users\stefa\pyhamilton\pyhamilton\interface.py", line 404, in raise_first_exception
+[2023-02-26 10:08:15,029] root ERROR raise HamiltonReturnParseError(self.raw)
+[2023-02-26 10:08:15,029] root ERROR pyhamilton.oemerr
+[2023-02-26 10:08:15,029] root ERROR .
+[2023-02-26 10:08:15,029] root ERROR HamiltonReturnParseError
+[2023-02-26 10:08:15,029] root ERROR : 
+[2023-02-26 10:08:15,029] root ERROR {"command":"STAR-return","step-name":"mph96TipEject","step-return1":"0[01,00,00,0,0.0,,","step-return2":"","step-return3":"","step-return4":"","id":"0x137c2f6aacfe"}
+[2023-02-26 10:15:11,278] root INFO #################################################################
+[2023-02-26 10:15:11,278] root INFO #                                                               #
+[2023-02-26 10:15:11,278] root INFO #     Begin execution of C:\Users\stefa\ntr_john\NTR\ntr.py     #
+[2023-02-26 10:15:11,278] root INFO #                                                               #
+[2023-02-26 10:15:11,278] root INFO #################################################################
+[2023-02-26 10:15:11,279] pyhamilton.interface INFO starting a Hamilton interface
+[2023-02-26 10:15:11,279] pyhamilton.interface INFO started the oem application for simulation
+[2023-02-26 10:15:11,279] pyhamilton.interface INFO started the server thread
+[2023-02-26 10:15:11,279] root INFO tip_pick_up_96: Pick up tips at TIP_50ul_L_NE_stack_0001_0004
+[2023-02-26 10:15:13,286] root INFO tip_eject_96: Eject tips to default waste
+[2023-02-26 10:15:14,287] root INFO tip_pick_up_96: Pick up tips at TIP_50ul_L_NE_stack_0002_0004
+[2023-02-26 10:15:16,294] root INFO tip_eject_96: Eject tips to default waste
+[2023-02-26 10:15:17,295] root INFO get_plate: Getting plate TIP_50ul_L_NE_stack_0001_0004
+[2023-02-26 10:15:19,297] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 10:15:20,298] root INFO get_plate: Getting plate TIP_50ul_L_NE_stack_0002_0004
+[2023-02-26 10:15:22,299] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 10:15:23,300] root INFO tip_pick_up_96: Pick up tips at TIP_50ul_L_NE_stack_0001_0003
+[2023-02-26 10:15:25,307] root INFO tip_eject_96: Eject tips to default waste
+[2023-02-26 10:15:26,309] root INFO tip_pick_up_96: Pick up tips at TIP_50ul_L_NE_stack_0002_0003
+[2023-02-26 10:15:29,320] root INFO tip_eject_96: Eject tips to default waste
+[2023-02-26 10:15:30,322] root INFO get_plate: Getting plate TIP_50ul_L_NE_stack_0001_0003
+[2023-02-26 10:15:31,323] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 10:15:33,324] root INFO get_plate: Getting plate TIP_50ul_L_NE_stack_0002_0003
+[2023-02-26 10:15:34,325] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 10:15:36,327] root INFO tip_pick_up_96: Pick up tips at TIP_50ul_L_NE_stack_0001_0002
+[2023-02-26 10:15:39,333] root INFO tip_eject_96: Eject tips to default waste
+[2023-02-26 10:15:40,334] root INFO tip_pick_up_96: Pick up tips at TIP_50ul_L_NE_stack_0002_0002
+[2023-02-26 10:15:42,341] root INFO tip_eject_96: Eject tips to default waste
+[2023-02-26 10:15:43,342] root INFO get_plate: Getting plate TIP_50ul_L_NE_stack_0001_0002
+[2023-02-26 10:15:45,344] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 10:15:47,345] root INFO get_plate: Getting plate TIP_50ul_L_NE_stack_0002_0002
+[2023-02-26 10:15:48,346] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 10:15:50,348] root INFO tip_pick_up_96: Pick up tips at TIP_50ul_L_NE_stack_0001_0001
+[2023-02-26 10:15:52,359] root INFO tip_eject_96: Eject tips to default waste
+[2023-02-26 10:15:53,360] root INFO tip_pick_up_96: Pick up tips at TIP_50ul_L_NE_stack_0002_0001
+[2023-02-26 10:15:55,366] root INFO tip_eject_96: Eject tips to default waste
+[2023-02-26 10:15:56,367] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0004, 1; TIP_50ul_L_NE_stack_0001_0004, 2; TIP_50ul_L_NE_stack_0001_0004, 3; TIP_50ul_L_NE_stack_0001_0004, 4; TIP_50ul_L_NE_stack_0001_0004, 5; TIP_50ul_L_NE_stack_0001_0004, 6; TIP_50ul_L_NE_stack_0001_0004, 7; TIP_50ul_L_NE_stack_0001_0004, 8
+[2023-02-26 10:15:58,377] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:15:59,378] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0004, 9; TIP_50ul_L_NE_stack_0001_0004, 10; TIP_50ul_L_NE_stack_0001_0004, 11; TIP_50ul_L_NE_stack_0001_0004, 12; TIP_50ul_L_NE_stack_0001_0004, 13; TIP_50ul_L_NE_stack_0001_0004, 14; TIP_50ul_L_NE_stack_0001_0004, 15; TIP_50ul_L_NE_stack_0001_0004, 16
+[2023-02-26 10:16:00,388] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:16:01,389] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0004, 17; TIP_50ul_L_NE_stack_0001_0004, 18; TIP_50ul_L_NE_stack_0001_0004, 19; TIP_50ul_L_NE_stack_0001_0004, 20; TIP_50ul_L_NE_stack_0001_0004, 21; TIP_50ul_L_NE_stack_0001_0004, 22; TIP_50ul_L_NE_stack_0001_0004, 23; TIP_50ul_L_NE_stack_0001_0004, 24
+[2023-02-26 10:16:03,402] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:16:04,403] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0004, 25; TIP_50ul_L_NE_stack_0001_0004, 26; TIP_50ul_L_NE_stack_0001_0004, 27; TIP_50ul_L_NE_stack_0001_0004, 28; TIP_50ul_L_NE_stack_0001_0004, 29; TIP_50ul_L_NE_stack_0001_0004, 30; TIP_50ul_L_NE_stack_0001_0004, 31; TIP_50ul_L_NE_stack_0001_0004, 32
+[2023-02-26 10:16:05,412] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:16:06,413] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0004, 33; TIP_50ul_L_NE_stack_0001_0004, 34; TIP_50ul_L_NE_stack_0001_0004, 35; TIP_50ul_L_NE_stack_0001_0004, 36; TIP_50ul_L_NE_stack_0001_0004, 37; TIP_50ul_L_NE_stack_0001_0004, 38; TIP_50ul_L_NE_stack_0001_0004, 39; TIP_50ul_L_NE_stack_0001_0004, 40
+[2023-02-26 10:16:08,425] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:16:10,426] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0004, 41; TIP_50ul_L_NE_stack_0001_0004, 42; TIP_50ul_L_NE_stack_0001_0004, 43; TIP_50ul_L_NE_stack_0001_0004, 44; TIP_50ul_L_NE_stack_0001_0004, 45; TIP_50ul_L_NE_stack_0001_0004, 46; TIP_50ul_L_NE_stack_0001_0004, 47; TIP_50ul_L_NE_stack_0001_0004, 48
+[2023-02-26 10:16:11,435] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:16:12,436] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0004, 49; TIP_50ul_L_NE_stack_0001_0004, 50; TIP_50ul_L_NE_stack_0001_0004, 51; TIP_50ul_L_NE_stack_0001_0004, 52; TIP_50ul_L_NE_stack_0001_0004, 53; TIP_50ul_L_NE_stack_0001_0004, 54; TIP_50ul_L_NE_stack_0001_0004, 55; TIP_50ul_L_NE_stack_0001_0004, 56
+[2023-02-26 10:16:13,447] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:16:15,449] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0004, 57; TIP_50ul_L_NE_stack_0001_0004, 58; TIP_50ul_L_NE_stack_0001_0004, 59; TIP_50ul_L_NE_stack_0001_0004, 60; TIP_50ul_L_NE_stack_0001_0004, 61; TIP_50ul_L_NE_stack_0001_0004, 62; TIP_50ul_L_NE_stack_0001_0004, 63; TIP_50ul_L_NE_stack_0001_0004, 64
+[2023-02-26 10:16:17,460] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:16:18,461] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0004, 65; TIP_50ul_L_NE_stack_0001_0004, 66; TIP_50ul_L_NE_stack_0001_0004, 67; TIP_50ul_L_NE_stack_0001_0004, 68; TIP_50ul_L_NE_stack_0001_0004, 69; TIP_50ul_L_NE_stack_0001_0004, 70; TIP_50ul_L_NE_stack_0001_0004, 71; TIP_50ul_L_NE_stack_0001_0004, 72
+[2023-02-26 10:16:19,471] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:16:21,474] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0004, 73; TIP_50ul_L_NE_stack_0001_0004, 74; TIP_50ul_L_NE_stack_0001_0004, 75; TIP_50ul_L_NE_stack_0001_0004, 76; TIP_50ul_L_NE_stack_0001_0004, 77; TIP_50ul_L_NE_stack_0001_0004, 78; TIP_50ul_L_NE_stack_0001_0004, 79; TIP_50ul_L_NE_stack_0001_0004, 80
+[2023-02-26 10:16:23,485] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:16:24,486] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0004, 81; TIP_50ul_L_NE_stack_0001_0004, 82; TIP_50ul_L_NE_stack_0001_0004, 83; TIP_50ul_L_NE_stack_0001_0004, 84; TIP_50ul_L_NE_stack_0001_0004, 85; TIP_50ul_L_NE_stack_0001_0004, 86; TIP_50ul_L_NE_stack_0001_0004, 87; TIP_50ul_L_NE_stack_0001_0004, 88
+[2023-02-26 10:16:25,496] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:16:26,497] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0004, 89; TIP_50ul_L_NE_stack_0001_0004, 90; TIP_50ul_L_NE_stack_0001_0004, 91; TIP_50ul_L_NE_stack_0001_0004, 92; TIP_50ul_L_NE_stack_0001_0004, 93; TIP_50ul_L_NE_stack_0001_0004, 94; TIP_50ul_L_NE_stack_0001_0004, 95; TIP_50ul_L_NE_stack_0001_0004, 96
+[2023-02-26 10:16:28,508] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:16:29,509] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0004, 1; TIP_50ul_L_NE_stack_0002_0004, 2; TIP_50ul_L_NE_stack_0002_0004, 3; TIP_50ul_L_NE_stack_0002_0004, 4; TIP_50ul_L_NE_stack_0002_0004, 5; TIP_50ul_L_NE_stack_0002_0004, 6; TIP_50ul_L_NE_stack_0002_0004, 7; TIP_50ul_L_NE_stack_0002_0004, 8
+[2023-02-26 10:16:30,520] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:16:31,520] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0004, 9; TIP_50ul_L_NE_stack_0002_0004, 10; TIP_50ul_L_NE_stack_0002_0004, 11; TIP_50ul_L_NE_stack_0002_0004, 12; TIP_50ul_L_NE_stack_0002_0004, 13; TIP_50ul_L_NE_stack_0002_0004, 14; TIP_50ul_L_NE_stack_0002_0004, 15; TIP_50ul_L_NE_stack_0002_0004, 16
+[2023-02-26 10:16:33,530] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:16:34,532] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0004, 17; TIP_50ul_L_NE_stack_0002_0004, 18; TIP_50ul_L_NE_stack_0002_0004, 19; TIP_50ul_L_NE_stack_0002_0004, 20; TIP_50ul_L_NE_stack_0002_0004, 21; TIP_50ul_L_NE_stack_0002_0004, 22; TIP_50ul_L_NE_stack_0002_0004, 23; TIP_50ul_L_NE_stack_0002_0004, 24
+[2023-02-26 10:16:35,542] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:16:36,543] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0004, 25; TIP_50ul_L_NE_stack_0002_0004, 26; TIP_50ul_L_NE_stack_0002_0004, 27; TIP_50ul_L_NE_stack_0002_0004, 28; TIP_50ul_L_NE_stack_0002_0004, 29; TIP_50ul_L_NE_stack_0002_0004, 30; TIP_50ul_L_NE_stack_0002_0004, 31; TIP_50ul_L_NE_stack_0002_0004, 32
+[2023-02-26 10:16:38,554] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:16:39,555] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0004, 33; TIP_50ul_L_NE_stack_0002_0004, 34; TIP_50ul_L_NE_stack_0002_0004, 35; TIP_50ul_L_NE_stack_0002_0004, 36; TIP_50ul_L_NE_stack_0002_0004, 37; TIP_50ul_L_NE_stack_0002_0004, 38; TIP_50ul_L_NE_stack_0002_0004, 39; TIP_50ul_L_NE_stack_0002_0004, 40
+[2023-02-26 10:16:40,565] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:16:41,566] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0004, 41; TIP_50ul_L_NE_stack_0002_0004, 42; TIP_50ul_L_NE_stack_0002_0004, 43; TIP_50ul_L_NE_stack_0002_0004, 44; TIP_50ul_L_NE_stack_0002_0004, 45; TIP_50ul_L_NE_stack_0002_0004, 46; TIP_50ul_L_NE_stack_0002_0004, 47; TIP_50ul_L_NE_stack_0002_0004, 48
+[2023-02-26 10:16:43,575] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:16:44,576] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0004, 49; TIP_50ul_L_NE_stack_0002_0004, 50; TIP_50ul_L_NE_stack_0002_0004, 51; TIP_50ul_L_NE_stack_0002_0004, 52; TIP_50ul_L_NE_stack_0002_0004, 53; TIP_50ul_L_NE_stack_0002_0004, 54; TIP_50ul_L_NE_stack_0002_0004, 55; TIP_50ul_L_NE_stack_0002_0004, 56
+[2023-02-26 10:16:45,586] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:16:46,587] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0004, 57; TIP_50ul_L_NE_stack_0002_0004, 58; TIP_50ul_L_NE_stack_0002_0004, 59; TIP_50ul_L_NE_stack_0002_0004, 60; TIP_50ul_L_NE_stack_0002_0004, 61; TIP_50ul_L_NE_stack_0002_0004, 62; TIP_50ul_L_NE_stack_0002_0004, 63; TIP_50ul_L_NE_stack_0002_0004, 64
+[2023-02-26 10:16:48,598] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:16:49,599] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0004, 65; TIP_50ul_L_NE_stack_0002_0004, 66; TIP_50ul_L_NE_stack_0002_0004, 67; TIP_50ul_L_NE_stack_0002_0004, 68; TIP_50ul_L_NE_stack_0002_0004, 69; TIP_50ul_L_NE_stack_0002_0004, 70; TIP_50ul_L_NE_stack_0002_0004, 71; TIP_50ul_L_NE_stack_0002_0004, 72
+[2023-02-26 10:16:50,615] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:16:52,618] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0004, 73; TIP_50ul_L_NE_stack_0002_0004, 74; TIP_50ul_L_NE_stack_0002_0004, 75; TIP_50ul_L_NE_stack_0002_0004, 76; TIP_50ul_L_NE_stack_0002_0004, 77; TIP_50ul_L_NE_stack_0002_0004, 78; TIP_50ul_L_NE_stack_0002_0004, 79; TIP_50ul_L_NE_stack_0002_0004, 80
+[2023-02-26 10:16:54,629] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:16:55,630] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0004, 81; TIP_50ul_L_NE_stack_0002_0004, 82; TIP_50ul_L_NE_stack_0002_0004, 83; TIP_50ul_L_NE_stack_0002_0004, 84; TIP_50ul_L_NE_stack_0002_0004, 85; TIP_50ul_L_NE_stack_0002_0004, 86; TIP_50ul_L_NE_stack_0002_0004, 87; TIP_50ul_L_NE_stack_0002_0004, 88
+[2023-02-26 10:16:56,639] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:16:58,641] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0004, 89; TIP_50ul_L_NE_stack_0002_0004, 90; TIP_50ul_L_NE_stack_0002_0004, 91; TIP_50ul_L_NE_stack_0002_0004, 92; TIP_50ul_L_NE_stack_0002_0004, 93; TIP_50ul_L_NE_stack_0002_0004, 94; TIP_50ul_L_NE_stack_0002_0004, 95; TIP_50ul_L_NE_stack_0002_0004, 96
+[2023-02-26 10:17:00,651] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:17:01,652] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0003_0004, 1; TIP_50ul_L_NE_stack_0003_0004, 2; TIP_50ul_L_NE_stack_0003_0004, 3; TIP_50ul_L_NE_stack_0003_0004, 4; TIP_50ul_L_NE_stack_0003_0004, 5; TIP_50ul_L_NE_stack_0003_0004, 6; TIP_50ul_L_NE_stack_0003_0004, 7; TIP_50ul_L_NE_stack_0003_0004, 8
+[2023-02-26 10:17:02,663] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:17:04,665] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0003_0004, 9; TIP_50ul_L_NE_stack_0003_0004, 10; TIP_50ul_L_NE_stack_0003_0004, 11; TIP_50ul_L_NE_stack_0003_0004, 12; TIP_50ul_L_NE_stack_0003_0004, 13; TIP_50ul_L_NE_stack_0003_0004, 14; TIP_50ul_L_NE_stack_0003_0004, 15; TIP_50ul_L_NE_stack_0003_0004, 16
+[2023-02-26 10:17:06,675] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:17:09,677] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0003_0004, 17; TIP_50ul_L_NE_stack_0003_0004, 18; TIP_50ul_L_NE_stack_0003_0004, 19; TIP_50ul_L_NE_stack_0003_0004, 20; TIP_50ul_L_NE_stack_0003_0004, 21; TIP_50ul_L_NE_stack_0003_0004, 22; TIP_50ul_L_NE_stack_0003_0004, 23; TIP_50ul_L_NE_stack_0003_0004, 24
+[2023-02-26 10:17:11,687] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:17:13,689] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0003_0004, 25; TIP_50ul_L_NE_stack_0003_0004, 26; TIP_50ul_L_NE_stack_0003_0004, 27; TIP_50ul_L_NE_stack_0003_0004, 28; TIP_50ul_L_NE_stack_0003_0004, 29; TIP_50ul_L_NE_stack_0003_0004, 30; TIP_50ul_L_NE_stack_0003_0004, 31; TIP_50ul_L_NE_stack_0003_0004, 32
+[2023-02-26 10:17:14,699] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:17:15,701] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0003_0004, 33; TIP_50ul_L_NE_stack_0003_0004, 34; TIP_50ul_L_NE_stack_0003_0004, 35; TIP_50ul_L_NE_stack_0003_0004, 36; TIP_50ul_L_NE_stack_0003_0004, 37; TIP_50ul_L_NE_stack_0003_0004, 38; TIP_50ul_L_NE_stack_0003_0004, 39; TIP_50ul_L_NE_stack_0003_0004, 40
+[2023-02-26 10:17:17,711] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:17:18,712] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0003_0004, 41; TIP_50ul_L_NE_stack_0003_0004, 42; TIP_50ul_L_NE_stack_0003_0004, 43; TIP_50ul_L_NE_stack_0003_0004, 44; TIP_50ul_L_NE_stack_0003_0004, 45; TIP_50ul_L_NE_stack_0003_0004, 46; TIP_50ul_L_NE_stack_0003_0004, 47; TIP_50ul_L_NE_stack_0003_0004, 48
+[2023-02-26 10:17:20,722] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:17:21,724] pyhamilton.interface INFO sending end run command to simulator
+[2023-02-26 10:17:23,224] pyhamilton.interface ERROR HamiltonTimeoutError('Timed out after 1.5 sec while waiting for response id 0x0')
+[2023-02-26 10:17:23,224] pyhamilton.interface INFO disconnected from server
+[2023-02-26 10:17:23,325] pyhamilton.interface INFO server did not exit yet, sending dummy request to exit its loop
+[2023-02-26 10:17:23,326] urllib3.util.retry DEBUG Converted retries value: 20 -> Retry(total=20, connect=None, read=None, redirect=None, status=None)
+[2023-02-26 10:17:23,331] urllib3.connectionpool DEBUG Starting new HTTP connection (1): 127.0.0.1:3221
+[2023-02-26 10:17:23,332] urllib3.connectionpool DEBUG http://127.0.0.1:3221 "GET / HTTP/1.1" 200 None
+[2023-02-26 10:17:23,333] pyhamilton.interface INFO dummy get request sent to server
+[2023-02-26 10:17:23,333] pyhamilton.interface INFO server thread exited
+[2023-02-26 10:50:59,368] root INFO #################################################################
+[2023-02-26 10:50:59,369] root INFO #                                                               #
+[2023-02-26 10:50:59,369] root INFO #     Begin execution of C:\Users\stefa\ntr_john\NTR\ntr.py     #
+[2023-02-26 10:50:59,369] root INFO #                                                               #
+[2023-02-26 10:50:59,369] root INFO #################################################################
+[2023-02-26 10:50:59,369] pyhamilton.interface INFO starting a Hamilton interface
+[2023-02-26 10:50:59,369] pyhamilton.interface INFO started the oem application for simulation
+[2023-02-26 10:50:59,369] pyhamilton.interface INFO started the server thread
+[2023-02-26 10:50:59,369] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 1; ST_L_NE_stack_0001_0004, 2; ST_L_NE_stack_0001_0004, 3; ST_L_NE_stack_0001_0004, 4; ST_L_NE_stack_0001_0004, 5; ST_L_NE_stack_0001_0004, 6; ST_L_NE_stack_0001_0004, 7; ST_L_NE_stack_0001_0004, 8
+[2023-02-26 10:51:00,379] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:51:02,380] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 9; ST_L_NE_stack_0001_0004, 10; ST_L_NE_stack_0001_0004, 11; ST_L_NE_stack_0001_0004, 12; ST_L_NE_stack_0001_0004, 13; ST_L_NE_stack_0001_0004, 14; ST_L_NE_stack_0001_0004, 15; ST_L_NE_stack_0001_0004, 16
+[2023-02-26 10:51:04,387] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:51:05,388] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 17; ST_L_NE_stack_0001_0004, 18; ST_L_NE_stack_0001_0004, 19; ST_L_NE_stack_0001_0004, 20; ST_L_NE_stack_0001_0004, 21; ST_L_NE_stack_0001_0004, 22; ST_L_NE_stack_0001_0004, 23; ST_L_NE_stack_0001_0004, 24
+[2023-02-26 10:51:06,395] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:51:08,398] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 25; ST_L_NE_stack_0001_0004, 26; ST_L_NE_stack_0001_0004, 27; ST_L_NE_stack_0001_0004, 28; ST_L_NE_stack_0001_0004, 29; ST_L_NE_stack_0001_0004, 30; ST_L_NE_stack_0001_0004, 31; ST_L_NE_stack_0001_0004, 32
+[2023-02-26 10:51:10,405] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:51:11,406] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 33; ST_L_NE_stack_0001_0004, 34; ST_L_NE_stack_0001_0004, 35; ST_L_NE_stack_0001_0004, 36; ST_L_NE_stack_0001_0004, 37; ST_L_NE_stack_0001_0004, 38; ST_L_NE_stack_0001_0004, 39; ST_L_NE_stack_0001_0004, 40
+[2023-02-26 10:51:13,417] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:51:15,418] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 41; ST_L_NE_stack_0001_0004, 42; ST_L_NE_stack_0001_0004, 43; ST_L_NE_stack_0001_0004, 44; ST_L_NE_stack_0001_0004, 45; ST_L_NE_stack_0001_0004, 46; ST_L_NE_stack_0001_0004, 47; ST_L_NE_stack_0001_0004, 48
+[2023-02-26 10:51:16,425] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:51:17,426] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 49; ST_L_NE_stack_0001_0004, 50; ST_L_NE_stack_0001_0004, 51; ST_L_NE_stack_0001_0004, 52; ST_L_NE_stack_0001_0004, 53; ST_L_NE_stack_0001_0004, 54; ST_L_NE_stack_0001_0004, 55; ST_L_NE_stack_0001_0004, 56
+[2023-02-26 10:51:19,435] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:51:20,435] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 57; ST_L_NE_stack_0001_0004, 58; ST_L_NE_stack_0001_0004, 59; ST_L_NE_stack_0001_0004, 60; ST_L_NE_stack_0001_0004, 61; ST_L_NE_stack_0001_0004, 62; ST_L_NE_stack_0001_0004, 63; ST_L_NE_stack_0001_0004, 64
+[2023-02-26 10:51:21,442] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:51:22,443] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 65; ST_L_NE_stack_0001_0004, 66; ST_L_NE_stack_0001_0004, 67; ST_L_NE_stack_0001_0004, 68; ST_L_NE_stack_0001_0004, 69; ST_L_NE_stack_0001_0004, 70; ST_L_NE_stack_0001_0004, 71; ST_L_NE_stack_0001_0004, 72
+[2023-02-26 10:51:24,451] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:51:25,452] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 73; ST_L_NE_stack_0001_0004, 74; ST_L_NE_stack_0001_0004, 75; ST_L_NE_stack_0001_0004, 76; ST_L_NE_stack_0001_0004, 77; ST_L_NE_stack_0001_0004, 78; ST_L_NE_stack_0001_0004, 79; ST_L_NE_stack_0001_0004, 80
+[2023-02-26 10:51:26,459] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:51:28,461] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 81; ST_L_NE_stack_0001_0004, 82; ST_L_NE_stack_0001_0004, 83; ST_L_NE_stack_0001_0004, 84; ST_L_NE_stack_0001_0004, 85; ST_L_NE_stack_0001_0004, 86; ST_L_NE_stack_0001_0004, 87; ST_L_NE_stack_0001_0004, 88
+[2023-02-26 10:51:30,468] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:51:31,469] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 89; ST_L_NE_stack_0001_0004, 90; ST_L_NE_stack_0001_0004, 91; ST_L_NE_stack_0001_0004, 92; ST_L_NE_stack_0001_0004, 93; ST_L_NE_stack_0001_0004, 94; ST_L_NE_stack_0001_0004, 95; ST_L_NE_stack_0001_0004, 96
+[2023-02-26 10:51:33,478] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:51:34,479] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 1; ST_L_NE_stack_0002_0004, 2; ST_L_NE_stack_0002_0004, 3; ST_L_NE_stack_0002_0004, 4; ST_L_NE_stack_0002_0004, 5; ST_L_NE_stack_0002_0004, 6; ST_L_NE_stack_0002_0004, 7; ST_L_NE_stack_0002_0004, 8
+[2023-02-26 10:51:35,485] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:51:36,487] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 9; ST_L_NE_stack_0002_0004, 10; ST_L_NE_stack_0002_0004, 11; ST_L_NE_stack_0002_0004, 12; ST_L_NE_stack_0002_0004, 13; ST_L_NE_stack_0002_0004, 14; ST_L_NE_stack_0002_0004, 15; ST_L_NE_stack_0002_0004, 16
+[2023-02-26 10:51:38,494] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:51:39,495] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 17; ST_L_NE_stack_0002_0004, 18; ST_L_NE_stack_0002_0004, 19; ST_L_NE_stack_0002_0004, 20; ST_L_NE_stack_0002_0004, 21; ST_L_NE_stack_0002_0004, 22; ST_L_NE_stack_0002_0004, 23; ST_L_NE_stack_0002_0004, 24
+[2023-02-26 10:51:40,502] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:51:41,504] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 25; ST_L_NE_stack_0002_0004, 26; ST_L_NE_stack_0002_0004, 27; ST_L_NE_stack_0002_0004, 28; ST_L_NE_stack_0002_0004, 29; ST_L_NE_stack_0002_0004, 30; ST_L_NE_stack_0002_0004, 31; ST_L_NE_stack_0002_0004, 32
+[2023-02-26 10:51:43,512] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:51:44,513] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 33; ST_L_NE_stack_0002_0004, 34; ST_L_NE_stack_0002_0004, 35; ST_L_NE_stack_0002_0004, 36; ST_L_NE_stack_0002_0004, 37; ST_L_NE_stack_0002_0004, 38; ST_L_NE_stack_0002_0004, 39; ST_L_NE_stack_0002_0004, 40
+[2023-02-26 10:51:45,520] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:51:47,521] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 41; ST_L_NE_stack_0002_0004, 42; ST_L_NE_stack_0002_0004, 43; ST_L_NE_stack_0002_0004, 44; ST_L_NE_stack_0002_0004, 45; ST_L_NE_stack_0002_0004, 46; ST_L_NE_stack_0002_0004, 47; ST_L_NE_stack_0002_0004, 48
+[2023-02-26 10:51:49,528] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:51:50,529] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 49; ST_L_NE_stack_0002_0004, 50; ST_L_NE_stack_0002_0004, 51; ST_L_NE_stack_0002_0004, 52; ST_L_NE_stack_0002_0004, 53; ST_L_NE_stack_0002_0004, 54; ST_L_NE_stack_0002_0004, 55; ST_L_NE_stack_0002_0004, 56
+[2023-02-26 10:51:52,540] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:51:54,541] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 57; ST_L_NE_stack_0002_0004, 58; ST_L_NE_stack_0002_0004, 59; ST_L_NE_stack_0002_0004, 60; ST_L_NE_stack_0002_0004, 61; ST_L_NE_stack_0002_0004, 62; ST_L_NE_stack_0002_0004, 63; ST_L_NE_stack_0002_0004, 64
+[2023-02-26 10:51:55,550] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:51:56,550] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 65; ST_L_NE_stack_0002_0004, 66; ST_L_NE_stack_0002_0004, 67; ST_L_NE_stack_0002_0004, 68; ST_L_NE_stack_0002_0004, 69; ST_L_NE_stack_0002_0004, 70; ST_L_NE_stack_0002_0004, 71; ST_L_NE_stack_0002_0004, 72
+[2023-02-26 10:51:58,559] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:51:59,560] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 73; ST_L_NE_stack_0002_0004, 74; ST_L_NE_stack_0002_0004, 75; ST_L_NE_stack_0002_0004, 76; ST_L_NE_stack_0002_0004, 77; ST_L_NE_stack_0002_0004, 78; ST_L_NE_stack_0002_0004, 79; ST_L_NE_stack_0002_0004, 80
+[2023-02-26 10:52:00,565] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:52:02,569] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 81; ST_L_NE_stack_0002_0004, 82; ST_L_NE_stack_0002_0004, 83; ST_L_NE_stack_0002_0004, 84; ST_L_NE_stack_0002_0004, 85; ST_L_NE_stack_0002_0004, 86; ST_L_NE_stack_0002_0004, 87; ST_L_NE_stack_0002_0004, 88
+[2023-02-26 10:52:04,581] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:52:05,582] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 89; ST_L_NE_stack_0002_0004, 90; ST_L_NE_stack_0002_0004, 91; ST_L_NE_stack_0002_0004, 92; ST_L_NE_stack_0002_0004, 93; ST_L_NE_stack_0002_0004, 94; ST_L_NE_stack_0002_0004, 95; ST_L_NE_stack_0002_0004, 96
+[2023-02-26 10:52:06,589] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:52:08,590] root INFO get_plate: Getting plate ST_L_NE_stack_0001_0004
+[2023-02-26 10:52:09,591] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 10:52:11,598] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0003, 1; ST_L_NE_stack_0001_0003, 2; ST_L_NE_stack_0001_0003, 3; ST_L_NE_stack_0001_0003, 4; ST_L_NE_stack_0001_0003, 5; ST_L_NE_stack_0001_0003, 6; ST_L_NE_stack_0001_0003, 7; ST_L_NE_stack_0001_0003, 8
+[2023-02-26 10:52:12,605] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:52:13,606] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0003, 9; ST_L_NE_stack_0001_0003, 10; ST_L_NE_stack_0001_0003, 11; ST_L_NE_stack_0001_0003, 12; ST_L_NE_stack_0001_0003, 13; ST_L_NE_stack_0001_0003, 14; ST_L_NE_stack_0001_0003, 15; ST_L_NE_stack_0001_0003, 16
+[2023-02-26 10:52:15,614] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:52:16,614] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0003, 17; ST_L_NE_stack_0001_0003, 18; ST_L_NE_stack_0001_0003, 19; ST_L_NE_stack_0001_0003, 20; ST_L_NE_stack_0001_0003, 21; ST_L_NE_stack_0001_0003, 22; ST_L_NE_stack_0001_0003, 23; ST_L_NE_stack_0001_0003, 24
+[2023-02-26 10:52:17,621] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:52:19,625] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0003, 25; ST_L_NE_stack_0001_0003, 26; ST_L_NE_stack_0001_0003, 27; ST_L_NE_stack_0001_0003, 28; ST_L_NE_stack_0001_0003, 29; ST_L_NE_stack_0001_0003, 30; ST_L_NE_stack_0001_0003, 31; ST_L_NE_stack_0001_0003, 32
+[2023-02-26 10:52:21,632] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:52:22,633] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0003, 33; ST_L_NE_stack_0001_0003, 34; ST_L_NE_stack_0001_0003, 35; ST_L_NE_stack_0001_0003, 36; ST_L_NE_stack_0001_0003, 37; ST_L_NE_stack_0001_0003, 38; ST_L_NE_stack_0001_0003, 39; ST_L_NE_stack_0001_0003, 40
+[2023-02-26 10:52:24,645] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:52:26,647] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0003, 41; ST_L_NE_stack_0001_0003, 42; ST_L_NE_stack_0001_0003, 43; ST_L_NE_stack_0001_0003, 44; ST_L_NE_stack_0001_0003, 45; ST_L_NE_stack_0001_0003, 46; ST_L_NE_stack_0001_0003, 47; ST_L_NE_stack_0001_0003, 48
+[2023-02-26 10:52:27,654] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 10:52:28,656] pyhamilton.interface INFO sending end run command to simulator
+[2023-02-26 10:52:30,156] pyhamilton.interface ERROR HamiltonTimeoutError('Timed out after 1.5 sec while waiting for response id 0x0')
+[2023-02-26 10:52:30,156] pyhamilton.interface INFO disconnected from server
+[2023-02-26 10:52:30,257] pyhamilton.interface INFO server did not exit yet, sending dummy request to exit its loop
+[2023-02-26 10:52:30,257] urllib3.util.retry DEBUG Converted retries value: 20 -> Retry(total=20, connect=None, read=None, redirect=None, status=None)
+[2023-02-26 10:52:30,260] urllib3.connectionpool DEBUG Starting new HTTP connection (1): 127.0.0.1:3221
+[2023-02-26 10:52:30,261] urllib3.connectionpool DEBUG http://127.0.0.1:3221 "GET / HTTP/1.1" 200 None
+[2023-02-26 10:52:30,261] pyhamilton.interface INFO dummy get request sent to server
+[2023-02-26 10:52:30,261] pyhamilton.interface INFO server thread exited
+[2023-02-26 11:00:37,071] root INFO #################################################################
+[2023-02-26 11:00:37,071] root INFO #                                                               #
+[2023-02-26 11:00:37,071] root INFO #     Begin execution of C:\Users\stefa\ntr_john\NTR\ntr.py     #
+[2023-02-26 11:00:37,071] root INFO #                                                               #
+[2023-02-26 11:00:37,071] root INFO #################################################################
+[2023-02-26 11:00:37,072] pyhamilton.interface INFO starting a Hamilton interface
+[2023-02-26 11:00:37,072] pyhamilton.interface INFO started the oem application for simulation
+[2023-02-26 11:00:37,072] pyhamilton.interface INFO started the server thread
+[2023-02-26 11:00:37,072] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 1; ST_L_NE_stack_0001_0004, 2; ST_L_NE_stack_0001_0004, 3; ST_L_NE_stack_0001_0004, 4; ST_L_NE_stack_0001_0004, 5; ST_L_NE_stack_0001_0004, 6; ST_L_NE_stack_0001_0004, 7; ST_L_NE_stack_0001_0004, 8
+[2023-02-26 11:00:38,078] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:00:39,081] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 9; ST_L_NE_stack_0001_0004, 10; ST_L_NE_stack_0001_0004, 11; ST_L_NE_stack_0001_0004, 12; ST_L_NE_stack_0001_0004, 13; ST_L_NE_stack_0001_0004, 14; ST_L_NE_stack_0001_0004, 15; ST_L_NE_stack_0001_0004, 16
+[2023-02-26 11:00:41,088] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:00:42,089] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 17; ST_L_NE_stack_0001_0004, 18; ST_L_NE_stack_0001_0004, 19; ST_L_NE_stack_0001_0004, 20; ST_L_NE_stack_0001_0004, 21; ST_L_NE_stack_0001_0004, 22; ST_L_NE_stack_0001_0004, 23; ST_L_NE_stack_0001_0004, 24
+[2023-02-26 11:00:43,096] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:00:45,097] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 25; ST_L_NE_stack_0001_0004, 26; ST_L_NE_stack_0001_0004, 27; ST_L_NE_stack_0001_0004, 28; ST_L_NE_stack_0001_0004, 29; ST_L_NE_stack_0001_0004, 30; ST_L_NE_stack_0001_0004, 31; ST_L_NE_stack_0001_0004, 32
+[2023-02-26 11:00:47,110] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:00:48,111] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 33; ST_L_NE_stack_0001_0004, 34; ST_L_NE_stack_0001_0004, 35; ST_L_NE_stack_0001_0004, 36; ST_L_NE_stack_0001_0004, 37; ST_L_NE_stack_0001_0004, 38; ST_L_NE_stack_0001_0004, 39; ST_L_NE_stack_0001_0004, 40
+[2023-02-26 11:00:50,118] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:00:51,119] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 41; ST_L_NE_stack_0001_0004, 42; ST_L_NE_stack_0001_0004, 43; ST_L_NE_stack_0001_0004, 44; ST_L_NE_stack_0001_0004, 45; ST_L_NE_stack_0001_0004, 46; ST_L_NE_stack_0001_0004, 47; ST_L_NE_stack_0001_0004, 48
+[2023-02-26 11:00:52,127] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:00:54,129] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 49; ST_L_NE_stack_0001_0004, 50; ST_L_NE_stack_0001_0004, 51; ST_L_NE_stack_0001_0004, 52; ST_L_NE_stack_0001_0004, 53; ST_L_NE_stack_0001_0004, 54; ST_L_NE_stack_0001_0004, 55; ST_L_NE_stack_0001_0004, 56
+[2023-02-26 11:00:56,138] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:00:57,139] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 57; ST_L_NE_stack_0001_0004, 58; ST_L_NE_stack_0001_0004, 59; ST_L_NE_stack_0001_0004, 60; ST_L_NE_stack_0001_0004, 61; ST_L_NE_stack_0001_0004, 62; ST_L_NE_stack_0001_0004, 63; ST_L_NE_stack_0001_0004, 64
+[2023-02-26 11:00:59,147] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:01:01,148] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 65; ST_L_NE_stack_0001_0004, 66; ST_L_NE_stack_0001_0004, 67; ST_L_NE_stack_0001_0004, 68; ST_L_NE_stack_0001_0004, 69; ST_L_NE_stack_0001_0004, 70; ST_L_NE_stack_0001_0004, 71; ST_L_NE_stack_0001_0004, 72
+[2023-02-26 11:01:02,155] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:01:03,156] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 73; ST_L_NE_stack_0001_0004, 74; ST_L_NE_stack_0001_0004, 75; ST_L_NE_stack_0001_0004, 76; ST_L_NE_stack_0001_0004, 77; ST_L_NE_stack_0001_0004, 78; ST_L_NE_stack_0001_0004, 79; ST_L_NE_stack_0001_0004, 80
+[2023-02-26 11:01:05,164] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:01:06,166] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 81; ST_L_NE_stack_0001_0004, 82; ST_L_NE_stack_0001_0004, 83; ST_L_NE_stack_0001_0004, 84; ST_L_NE_stack_0001_0004, 85; ST_L_NE_stack_0001_0004, 86; ST_L_NE_stack_0001_0004, 87; ST_L_NE_stack_0001_0004, 88
+[2023-02-26 11:01:07,172] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:01:09,174] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 89; ST_L_NE_stack_0001_0004, 90; ST_L_NE_stack_0001_0004, 91; ST_L_NE_stack_0001_0004, 92; ST_L_NE_stack_0001_0004, 93; ST_L_NE_stack_0001_0004, 94; ST_L_NE_stack_0001_0004, 95; ST_L_NE_stack_0001_0004, 96
+[2023-02-26 11:01:11,182] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:01:12,183] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 1; ST_L_NE_stack_0002_0004, 2; ST_L_NE_stack_0002_0004, 3; ST_L_NE_stack_0002_0004, 4; ST_L_NE_stack_0002_0004, 5; ST_L_NE_stack_0002_0004, 6; ST_L_NE_stack_0002_0004, 7; ST_L_NE_stack_0002_0004, 8
+[2023-02-26 11:01:14,192] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:01:16,195] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 9; ST_L_NE_stack_0002_0004, 10; ST_L_NE_stack_0002_0004, 11; ST_L_NE_stack_0002_0004, 12; ST_L_NE_stack_0002_0004, 13; ST_L_NE_stack_0002_0004, 14; ST_L_NE_stack_0002_0004, 15; ST_L_NE_stack_0002_0004, 16
+[2023-02-26 11:01:17,201] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:01:18,202] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 17; ST_L_NE_stack_0002_0004, 18; ST_L_NE_stack_0002_0004, 19; ST_L_NE_stack_0002_0004, 20; ST_L_NE_stack_0002_0004, 21; ST_L_NE_stack_0002_0004, 22; ST_L_NE_stack_0002_0004, 23; ST_L_NE_stack_0002_0004, 24
+[2023-02-26 11:01:20,209] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:01:21,211] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 25; ST_L_NE_stack_0002_0004, 26; ST_L_NE_stack_0002_0004, 27; ST_L_NE_stack_0002_0004, 28; ST_L_NE_stack_0002_0004, 29; ST_L_NE_stack_0002_0004, 30; ST_L_NE_stack_0002_0004, 31; ST_L_NE_stack_0002_0004, 32
+[2023-02-26 11:01:22,218] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:01:24,220] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 33; ST_L_NE_stack_0002_0004, 34; ST_L_NE_stack_0002_0004, 35; ST_L_NE_stack_0002_0004, 36; ST_L_NE_stack_0002_0004, 37; ST_L_NE_stack_0002_0004, 38; ST_L_NE_stack_0002_0004, 39; ST_L_NE_stack_0002_0004, 40
+[2023-02-26 11:01:26,228] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:01:27,229] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 41; ST_L_NE_stack_0002_0004, 42; ST_L_NE_stack_0002_0004, 43; ST_L_NE_stack_0002_0004, 44; ST_L_NE_stack_0002_0004, 45; ST_L_NE_stack_0002_0004, 46; ST_L_NE_stack_0002_0004, 47; ST_L_NE_stack_0002_0004, 48
+[2023-02-26 11:01:29,236] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:01:30,237] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 49; ST_L_NE_stack_0002_0004, 50; ST_L_NE_stack_0002_0004, 51; ST_L_NE_stack_0002_0004, 52; ST_L_NE_stack_0002_0004, 53; ST_L_NE_stack_0002_0004, 54; ST_L_NE_stack_0002_0004, 55; ST_L_NE_stack_0002_0004, 56
+[2023-02-26 11:01:31,244] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:01:33,247] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 57; ST_L_NE_stack_0002_0004, 58; ST_L_NE_stack_0002_0004, 59; ST_L_NE_stack_0002_0004, 60; ST_L_NE_stack_0002_0004, 61; ST_L_NE_stack_0002_0004, 62; ST_L_NE_stack_0002_0004, 63; ST_L_NE_stack_0002_0004, 64
+[2023-02-26 11:01:35,254] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:01:36,255] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 65; ST_L_NE_stack_0002_0004, 66; ST_L_NE_stack_0002_0004, 67; ST_L_NE_stack_0002_0004, 68; ST_L_NE_stack_0002_0004, 69; ST_L_NE_stack_0002_0004, 70; ST_L_NE_stack_0002_0004, 71; ST_L_NE_stack_0002_0004, 72
+[2023-02-26 11:01:38,263] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:01:40,265] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 73; ST_L_NE_stack_0002_0004, 74; ST_L_NE_stack_0002_0004, 75; ST_L_NE_stack_0002_0004, 76; ST_L_NE_stack_0002_0004, 77; ST_L_NE_stack_0002_0004, 78; ST_L_NE_stack_0002_0004, 79; ST_L_NE_stack_0002_0004, 80
+[2023-02-26 11:01:41,273] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:01:42,274] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 81; ST_L_NE_stack_0002_0004, 82; ST_L_NE_stack_0002_0004, 83; ST_L_NE_stack_0002_0004, 84; ST_L_NE_stack_0002_0004, 85; ST_L_NE_stack_0002_0004, 86; ST_L_NE_stack_0002_0004, 87; ST_L_NE_stack_0002_0004, 88
+[2023-02-26 11:01:44,280] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:01:45,281] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 89; ST_L_NE_stack_0002_0004, 90; ST_L_NE_stack_0002_0004, 91; ST_L_NE_stack_0002_0004, 92; ST_L_NE_stack_0002_0004, 93; ST_L_NE_stack_0002_0004, 94; ST_L_NE_stack_0002_0004, 95; ST_L_NE_stack_0002_0004, 96
+[2023-02-26 11:01:46,289] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:01:48,291] root INFO get_plate: Getting plate ST_L_NE_stack_0001_0004
+[2023-02-26 11:01:49,292] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 11:01:51,294] root INFO get_plate: Getting plate ST_L_NE_stack_0002_0004
+[2023-02-26 11:01:53,296] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 11:01:55,297] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0003, 1; ST_L_NE_stack_0001_0003, 2; ST_L_NE_stack_0001_0003, 3; ST_L_NE_stack_0001_0003, 4; ST_L_NE_stack_0001_0003, 5; ST_L_NE_stack_0001_0003, 6; ST_L_NE_stack_0001_0003, 7; ST_L_NE_stack_0001_0003, 8
+[2023-02-26 11:01:57,306] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:01:58,307] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0003, 9; ST_L_NE_stack_0001_0003, 10; ST_L_NE_stack_0001_0003, 11; ST_L_NE_stack_0001_0003, 12; ST_L_NE_stack_0001_0003, 13; ST_L_NE_stack_0001_0003, 14; ST_L_NE_stack_0001_0003, 15; ST_L_NE_stack_0001_0003, 16
+[2023-02-26 11:02:00,316] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:02:02,317] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0003, 17; ST_L_NE_stack_0001_0003, 18; ST_L_NE_stack_0001_0003, 19; ST_L_NE_stack_0001_0003, 20; ST_L_NE_stack_0001_0003, 21; ST_L_NE_stack_0001_0003, 22; ST_L_NE_stack_0001_0003, 23; ST_L_NE_stack_0001_0003, 24
+[2023-02-26 11:02:03,324] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:02:04,326] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0003, 25; ST_L_NE_stack_0001_0003, 26; ST_L_NE_stack_0001_0003, 27; ST_L_NE_stack_0001_0003, 28; ST_L_NE_stack_0001_0003, 29; ST_L_NE_stack_0001_0003, 30; ST_L_NE_stack_0001_0003, 31; ST_L_NE_stack_0001_0003, 32
+[2023-02-26 11:02:06,334] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:02:07,335] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0003, 33; ST_L_NE_stack_0001_0003, 34; ST_L_NE_stack_0001_0003, 35; ST_L_NE_stack_0001_0003, 36; ST_L_NE_stack_0001_0003, 37; ST_L_NE_stack_0001_0003, 38; ST_L_NE_stack_0001_0003, 39; ST_L_NE_stack_0001_0003, 40
+[2023-02-26 11:02:08,342] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:02:09,343] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0003, 41; ST_L_NE_stack_0001_0003, 42; ST_L_NE_stack_0001_0003, 43; ST_L_NE_stack_0001_0003, 44; ST_L_NE_stack_0001_0003, 45; ST_L_NE_stack_0001_0003, 46; ST_L_NE_stack_0001_0003, 47; ST_L_NE_stack_0001_0003, 48
+[2023-02-26 11:02:11,351] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:02:12,353] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0003, 49; ST_L_NE_stack_0001_0003, 50; ST_L_NE_stack_0001_0003, 51; ST_L_NE_stack_0001_0003, 52; ST_L_NE_stack_0001_0003, 53; ST_L_NE_stack_0001_0003, 54; ST_L_NE_stack_0001_0003, 55; ST_L_NE_stack_0001_0003, 56
+[2023-02-26 11:02:13,360] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:02:15,361] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0003, 57; ST_L_NE_stack_0001_0003, 58; ST_L_NE_stack_0001_0003, 59; ST_L_NE_stack_0001_0003, 60; ST_L_NE_stack_0001_0003, 61; ST_L_NE_stack_0001_0003, 62; ST_L_NE_stack_0001_0003, 63; ST_L_NE_stack_0001_0003, 64
+[2023-02-26 11:02:16,369] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:02:17,369] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0003, 65; ST_L_NE_stack_0001_0003, 66; ST_L_NE_stack_0001_0003, 67; ST_L_NE_stack_0001_0003, 68; ST_L_NE_stack_0001_0003, 69; ST_L_NE_stack_0001_0003, 70; ST_L_NE_stack_0001_0003, 71; ST_L_NE_stack_0001_0003, 72
+[2023-02-26 11:02:19,377] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:02:20,378] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0003, 73; ST_L_NE_stack_0001_0003, 74; ST_L_NE_stack_0001_0003, 75; ST_L_NE_stack_0001_0003, 76; ST_L_NE_stack_0001_0003, 77; ST_L_NE_stack_0001_0003, 78; ST_L_NE_stack_0001_0003, 79; ST_L_NE_stack_0001_0003, 80
+[2023-02-26 11:02:21,385] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:02:23,387] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0003, 81; ST_L_NE_stack_0001_0003, 82; ST_L_NE_stack_0001_0003, 83; ST_L_NE_stack_0001_0003, 84; ST_L_NE_stack_0001_0003, 85; ST_L_NE_stack_0001_0003, 86; ST_L_NE_stack_0001_0003, 87; ST_L_NE_stack_0001_0003, 88
+[2023-02-26 11:02:25,395] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:02:26,396] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0003, 89; ST_L_NE_stack_0001_0003, 90; ST_L_NE_stack_0001_0003, 91; ST_L_NE_stack_0001_0003, 92; ST_L_NE_stack_0001_0003, 93; ST_L_NE_stack_0001_0003, 94; ST_L_NE_stack_0001_0003, 95; ST_L_NE_stack_0001_0003, 96
+[2023-02-26 11:02:27,402] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:02:29,404] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0003, 1; ST_L_NE_stack_0002_0003, 2; ST_L_NE_stack_0002_0003, 3; ST_L_NE_stack_0002_0003, 4; ST_L_NE_stack_0002_0003, 5; ST_L_NE_stack_0002_0003, 6; ST_L_NE_stack_0002_0003, 7; ST_L_NE_stack_0002_0003, 8
+[2023-02-26 11:02:30,417] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:02:31,418] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0003, 9; ST_L_NE_stack_0002_0003, 10; ST_L_NE_stack_0002_0003, 11; ST_L_NE_stack_0002_0003, 12; ST_L_NE_stack_0002_0003, 13; ST_L_NE_stack_0002_0003, 14; ST_L_NE_stack_0002_0003, 15; ST_L_NE_stack_0002_0003, 16
+[2023-02-26 11:02:33,426] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:02:34,427] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0003, 17; ST_L_NE_stack_0002_0003, 18; ST_L_NE_stack_0002_0003, 19; ST_L_NE_stack_0002_0003, 20; ST_L_NE_stack_0002_0003, 21; ST_L_NE_stack_0002_0003, 22; ST_L_NE_stack_0002_0003, 23; ST_L_NE_stack_0002_0003, 24
+[2023-02-26 11:02:37,435] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:02:39,437] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0003, 25; ST_L_NE_stack_0002_0003, 26; ST_L_NE_stack_0002_0003, 27; ST_L_NE_stack_0002_0003, 28; ST_L_NE_stack_0002_0003, 29; ST_L_NE_stack_0002_0003, 30; ST_L_NE_stack_0002_0003, 31; ST_L_NE_stack_0002_0003, 32
+[2023-02-26 11:02:40,444] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:02:41,445] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0003, 33; ST_L_NE_stack_0002_0003, 34; ST_L_NE_stack_0002_0003, 35; ST_L_NE_stack_0002_0003, 36; ST_L_NE_stack_0002_0003, 37; ST_L_NE_stack_0002_0003, 38; ST_L_NE_stack_0002_0003, 39; ST_L_NE_stack_0002_0003, 40
+[2023-02-26 11:02:43,454] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:02:44,455] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0003, 41; ST_L_NE_stack_0002_0003, 42; ST_L_NE_stack_0002_0003, 43; ST_L_NE_stack_0002_0003, 44; ST_L_NE_stack_0002_0003, 45; ST_L_NE_stack_0002_0003, 46; ST_L_NE_stack_0002_0003, 47; ST_L_NE_stack_0002_0003, 48
+[2023-02-26 11:02:46,463] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:02:47,464] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0003, 49; ST_L_NE_stack_0002_0003, 50; ST_L_NE_stack_0002_0003, 51; ST_L_NE_stack_0002_0003, 52; ST_L_NE_stack_0002_0003, 53; ST_L_NE_stack_0002_0003, 54; ST_L_NE_stack_0002_0003, 55; ST_L_NE_stack_0002_0003, 56
+[2023-02-26 11:02:48,474] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:02:49,475] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0003, 57; ST_L_NE_stack_0002_0003, 58; ST_L_NE_stack_0002_0003, 59; ST_L_NE_stack_0002_0003, 60; ST_L_NE_stack_0002_0003, 61; ST_L_NE_stack_0002_0003, 62; ST_L_NE_stack_0002_0003, 63; ST_L_NE_stack_0002_0003, 64
+[2023-02-26 11:02:51,483] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:02:52,484] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0003, 65; ST_L_NE_stack_0002_0003, 66; ST_L_NE_stack_0002_0003, 67; ST_L_NE_stack_0002_0003, 68; ST_L_NE_stack_0002_0003, 69; ST_L_NE_stack_0002_0003, 70; ST_L_NE_stack_0002_0003, 71; ST_L_NE_stack_0002_0003, 72
+[2023-02-26 11:02:54,497] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:02:55,499] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0003, 73; ST_L_NE_stack_0002_0003, 74; ST_L_NE_stack_0002_0003, 75; ST_L_NE_stack_0002_0003, 76; ST_L_NE_stack_0002_0003, 77; ST_L_NE_stack_0002_0003, 78; ST_L_NE_stack_0002_0003, 79; ST_L_NE_stack_0002_0003, 80
+[2023-02-26 11:02:57,510] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:02:58,513] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0003, 81; ST_L_NE_stack_0002_0003, 82; ST_L_NE_stack_0002_0003, 83; ST_L_NE_stack_0002_0003, 84; ST_L_NE_stack_0002_0003, 85; ST_L_NE_stack_0002_0003, 86; ST_L_NE_stack_0002_0003, 87; ST_L_NE_stack_0002_0003, 88
+[2023-02-26 11:03:00,522] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:03:01,525] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0003, 89; ST_L_NE_stack_0002_0003, 90; ST_L_NE_stack_0002_0003, 91; ST_L_NE_stack_0002_0003, 92; ST_L_NE_stack_0002_0003, 93; ST_L_NE_stack_0002_0003, 94; ST_L_NE_stack_0002_0003, 95; ST_L_NE_stack_0002_0003, 96
+[2023-02-26 11:03:03,533] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:03:04,534] root INFO get_plate: Getting plate ST_L_NE_stack_0001_0003
+[2023-02-26 11:03:06,536] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 11:03:07,536] root INFO get_plate: Getting plate ST_L_NE_stack_0002_0003
+[2023-02-26 11:03:09,537] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 11:03:10,538] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0002, 1; ST_L_NE_stack_0001_0002, 2; ST_L_NE_stack_0001_0002, 3; ST_L_NE_stack_0001_0002, 4; ST_L_NE_stack_0001_0002, 5; ST_L_NE_stack_0001_0002, 6; ST_L_NE_stack_0001_0002, 7; ST_L_NE_stack_0001_0002, 8
+[2023-02-26 11:03:12,550] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:03:13,551] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0002, 9; ST_L_NE_stack_0001_0002, 10; ST_L_NE_stack_0001_0002, 11; ST_L_NE_stack_0001_0002, 12; ST_L_NE_stack_0001_0002, 13; ST_L_NE_stack_0001_0002, 14; ST_L_NE_stack_0001_0002, 15; ST_L_NE_stack_0001_0002, 16
+[2023-02-26 11:03:15,568] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:03:16,569] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0002, 17; ST_L_NE_stack_0001_0002, 18; ST_L_NE_stack_0001_0002, 19; ST_L_NE_stack_0001_0002, 20; ST_L_NE_stack_0001_0002, 21; ST_L_NE_stack_0001_0002, 22; ST_L_NE_stack_0001_0002, 23; ST_L_NE_stack_0001_0002, 24
+[2023-02-26 11:03:18,578] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:03:19,580] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0002, 25; ST_L_NE_stack_0001_0002, 26; ST_L_NE_stack_0001_0002, 27; ST_L_NE_stack_0001_0002, 28; ST_L_NE_stack_0001_0002, 29; ST_L_NE_stack_0001_0002, 30; ST_L_NE_stack_0001_0002, 31; ST_L_NE_stack_0001_0002, 32
+[2023-02-26 11:03:21,593] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:03:22,595] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0002, 33; ST_L_NE_stack_0001_0002, 34; ST_L_NE_stack_0001_0002, 35; ST_L_NE_stack_0001_0002, 36; ST_L_NE_stack_0001_0002, 37; ST_L_NE_stack_0001_0002, 38; ST_L_NE_stack_0001_0002, 39; ST_L_NE_stack_0001_0002, 40
+[2023-02-26 11:03:24,609] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:03:25,609] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0002, 41; ST_L_NE_stack_0001_0002, 42; ST_L_NE_stack_0001_0002, 43; ST_L_NE_stack_0001_0002, 44; ST_L_NE_stack_0001_0002, 45; ST_L_NE_stack_0001_0002, 46; ST_L_NE_stack_0001_0002, 47; ST_L_NE_stack_0001_0002, 48
+[2023-02-26 11:03:27,620] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:03:28,622] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0002, 49; ST_L_NE_stack_0001_0002, 50; ST_L_NE_stack_0001_0002, 51; ST_L_NE_stack_0001_0002, 52; ST_L_NE_stack_0001_0002, 53; ST_L_NE_stack_0001_0002, 54; ST_L_NE_stack_0001_0002, 55; ST_L_NE_stack_0001_0002, 56
+[2023-02-26 11:03:29,631] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:03:30,633] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0002, 57; ST_L_NE_stack_0001_0002, 58; ST_L_NE_stack_0001_0002, 59; ST_L_NE_stack_0001_0002, 60; ST_L_NE_stack_0001_0002, 61; ST_L_NE_stack_0001_0002, 62; ST_L_NE_stack_0001_0002, 63; ST_L_NE_stack_0001_0002, 64
+[2023-02-26 11:03:32,640] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:03:33,642] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0002, 65; ST_L_NE_stack_0001_0002, 66; ST_L_NE_stack_0001_0002, 67; ST_L_NE_stack_0001_0002, 68; ST_L_NE_stack_0001_0002, 69; ST_L_NE_stack_0001_0002, 70; ST_L_NE_stack_0001_0002, 71; ST_L_NE_stack_0001_0002, 72
+[2023-02-26 11:03:34,651] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:03:36,654] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0002, 73; ST_L_NE_stack_0001_0002, 74; ST_L_NE_stack_0001_0002, 75; ST_L_NE_stack_0001_0002, 76; ST_L_NE_stack_0001_0002, 77; ST_L_NE_stack_0001_0002, 78; ST_L_NE_stack_0001_0002, 79; ST_L_NE_stack_0001_0002, 80
+[2023-02-26 11:03:37,664] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:03:38,666] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0002, 81; ST_L_NE_stack_0001_0002, 82; ST_L_NE_stack_0001_0002, 83; ST_L_NE_stack_0001_0002, 84; ST_L_NE_stack_0001_0002, 85; ST_L_NE_stack_0001_0002, 86; ST_L_NE_stack_0001_0002, 87; ST_L_NE_stack_0001_0002, 88
+[2023-02-26 11:03:40,677] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:03:41,678] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0002, 89; ST_L_NE_stack_0001_0002, 90; ST_L_NE_stack_0001_0002, 91; ST_L_NE_stack_0001_0002, 92; ST_L_NE_stack_0001_0002, 93; ST_L_NE_stack_0001_0002, 94; ST_L_NE_stack_0001_0002, 95; ST_L_NE_stack_0001_0002, 96
+[2023-02-26 11:03:42,686] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:03:44,687] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0002, 1; ST_L_NE_stack_0002_0002, 2; ST_L_NE_stack_0002_0002, 3; ST_L_NE_stack_0002_0002, 4; ST_L_NE_stack_0002_0002, 5; ST_L_NE_stack_0002_0002, 6; ST_L_NE_stack_0002_0002, 7; ST_L_NE_stack_0002_0002, 8
+[2023-02-26 11:03:45,696] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:03:46,697] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0002, 9; ST_L_NE_stack_0002_0002, 10; ST_L_NE_stack_0002_0002, 11; ST_L_NE_stack_0002_0002, 12; ST_L_NE_stack_0002_0002, 13; ST_L_NE_stack_0002_0002, 14; ST_L_NE_stack_0002_0002, 15; ST_L_NE_stack_0002_0002, 16
+[2023-02-26 11:03:48,705] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:03:49,706] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0002, 17; ST_L_NE_stack_0002_0002, 18; ST_L_NE_stack_0002_0002, 19; ST_L_NE_stack_0002_0002, 20; ST_L_NE_stack_0002_0002, 21; ST_L_NE_stack_0002_0002, 22; ST_L_NE_stack_0002_0002, 23; ST_L_NE_stack_0002_0002, 24
+[2023-02-26 11:03:50,715] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:03:51,716] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0002, 25; ST_L_NE_stack_0002_0002, 26; ST_L_NE_stack_0002_0002, 27; ST_L_NE_stack_0002_0002, 28; ST_L_NE_stack_0002_0002, 29; ST_L_NE_stack_0002_0002, 30; ST_L_NE_stack_0002_0002, 31; ST_L_NE_stack_0002_0002, 32
+[2023-02-26 11:03:53,726] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:03:54,728] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0002, 33; ST_L_NE_stack_0002_0002, 34; ST_L_NE_stack_0002_0002, 35; ST_L_NE_stack_0002_0002, 36; ST_L_NE_stack_0002_0002, 37; ST_L_NE_stack_0002_0002, 38; ST_L_NE_stack_0002_0002, 39; ST_L_NE_stack_0002_0002, 40
+[2023-02-26 11:03:55,744] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:03:56,745] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0002, 41; ST_L_NE_stack_0002_0002, 42; ST_L_NE_stack_0002_0002, 43; ST_L_NE_stack_0002_0002, 44; ST_L_NE_stack_0002_0002, 45; ST_L_NE_stack_0002_0002, 46; ST_L_NE_stack_0002_0002, 47; ST_L_NE_stack_0002_0002, 48
+[2023-02-26 11:03:58,754] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:03:59,756] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0002, 49; ST_L_NE_stack_0002_0002, 50; ST_L_NE_stack_0002_0002, 51; ST_L_NE_stack_0002_0002, 52; ST_L_NE_stack_0002_0002, 53; ST_L_NE_stack_0002_0002, 54; ST_L_NE_stack_0002_0002, 55; ST_L_NE_stack_0002_0002, 56
+[2023-02-26 11:04:00,764] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:04:01,765] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0002, 57; ST_L_NE_stack_0002_0002, 58; ST_L_NE_stack_0002_0002, 59; ST_L_NE_stack_0002_0002, 60; ST_L_NE_stack_0002_0002, 61; ST_L_NE_stack_0002_0002, 62; ST_L_NE_stack_0002_0002, 63; ST_L_NE_stack_0002_0002, 64
+[2023-02-26 11:04:03,772] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:04:04,773] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0002, 65; ST_L_NE_stack_0002_0002, 66; ST_L_NE_stack_0002_0002, 67; ST_L_NE_stack_0002_0002, 68; ST_L_NE_stack_0002_0002, 69; ST_L_NE_stack_0002_0002, 70; ST_L_NE_stack_0002_0002, 71; ST_L_NE_stack_0002_0002, 72
+[2023-02-26 11:04:05,781] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:04:06,784] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0002, 73; ST_L_NE_stack_0002_0002, 74; ST_L_NE_stack_0002_0002, 75; ST_L_NE_stack_0002_0002, 76; ST_L_NE_stack_0002_0002, 77; ST_L_NE_stack_0002_0002, 78; ST_L_NE_stack_0002_0002, 79; ST_L_NE_stack_0002_0002, 80
+[2023-02-26 11:04:08,792] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:04:09,793] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0002, 81; ST_L_NE_stack_0002_0002, 82; ST_L_NE_stack_0002_0002, 83; ST_L_NE_stack_0002_0002, 84; ST_L_NE_stack_0002_0002, 85; ST_L_NE_stack_0002_0002, 86; ST_L_NE_stack_0002_0002, 87; ST_L_NE_stack_0002_0002, 88
+[2023-02-26 11:04:10,801] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:04:12,802] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0002, 89; ST_L_NE_stack_0002_0002, 90; ST_L_NE_stack_0002_0002, 91; ST_L_NE_stack_0002_0002, 92; ST_L_NE_stack_0002_0002, 93; ST_L_NE_stack_0002_0002, 94; ST_L_NE_stack_0002_0002, 95; ST_L_NE_stack_0002_0002, 96
+[2023-02-26 11:04:14,812] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:04:15,812] root INFO get_plate: Getting plate ST_L_NE_stack_0001_0002
+[2023-02-26 11:04:17,814] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 11:04:18,815] root INFO get_plate: Getting plate ST_L_NE_stack_0002_0002
+[2023-02-26 11:04:20,816] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 11:04:22,818] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0001, 1; ST_L_NE_stack_0001_0001, 2; ST_L_NE_stack_0001_0001, 3; ST_L_NE_stack_0001_0001, 4; ST_L_NE_stack_0001_0001, 5; ST_L_NE_stack_0001_0001, 6; ST_L_NE_stack_0001_0001, 7; ST_L_NE_stack_0001_0001, 8
+[2023-02-26 11:04:23,825] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:04:24,826] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0001, 9; ST_L_NE_stack_0001_0001, 10; ST_L_NE_stack_0001_0001, 11; ST_L_NE_stack_0001_0001, 12; ST_L_NE_stack_0001_0001, 13; ST_L_NE_stack_0001_0001, 14; ST_L_NE_stack_0001_0001, 15; ST_L_NE_stack_0001_0001, 16
+[2023-02-26 11:04:26,833] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:04:27,835] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0001, 17; ST_L_NE_stack_0001_0001, 18; ST_L_NE_stack_0001_0001, 19; ST_L_NE_stack_0001_0001, 20; ST_L_NE_stack_0001_0001, 21; ST_L_NE_stack_0001_0001, 22; ST_L_NE_stack_0001_0001, 23; ST_L_NE_stack_0001_0001, 24
+[2023-02-26 11:04:28,842] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:04:29,842] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0001, 25; ST_L_NE_stack_0001_0001, 26; ST_L_NE_stack_0001_0001, 27; ST_L_NE_stack_0001_0001, 28; ST_L_NE_stack_0001_0001, 29; ST_L_NE_stack_0001_0001, 30; ST_L_NE_stack_0001_0001, 31; ST_L_NE_stack_0001_0001, 32
+[2023-02-26 11:04:31,854] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:04:32,855] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0001, 33; ST_L_NE_stack_0001_0001, 34; ST_L_NE_stack_0001_0001, 35; ST_L_NE_stack_0001_0001, 36; ST_L_NE_stack_0001_0001, 37; ST_L_NE_stack_0001_0001, 38; ST_L_NE_stack_0001_0001, 39; ST_L_NE_stack_0001_0001, 40
+[2023-02-26 11:04:33,862] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:04:37,866] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0001, 41; ST_L_NE_stack_0001_0001, 42; ST_L_NE_stack_0001_0001, 43; ST_L_NE_stack_0001_0001, 44; ST_L_NE_stack_0001_0001, 45; ST_L_NE_stack_0001_0001, 46; ST_L_NE_stack_0001_0001, 47; ST_L_NE_stack_0001_0001, 48
+[2023-02-26 11:04:38,873] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:04:39,875] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0001, 49; ST_L_NE_stack_0001_0001, 50; ST_L_NE_stack_0001_0001, 51; ST_L_NE_stack_0001_0001, 52; ST_L_NE_stack_0001_0001, 53; ST_L_NE_stack_0001_0001, 54; ST_L_NE_stack_0001_0001, 55; ST_L_NE_stack_0001_0001, 56
+[2023-02-26 11:04:41,883] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:04:42,884] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0001, 57; ST_L_NE_stack_0001_0001, 58; ST_L_NE_stack_0001_0001, 59; ST_L_NE_stack_0001_0001, 60; ST_L_NE_stack_0001_0001, 61; ST_L_NE_stack_0001_0001, 62; ST_L_NE_stack_0001_0001, 63; ST_L_NE_stack_0001_0001, 64
+[2023-02-26 11:04:43,892] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:04:45,893] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0001, 65; ST_L_NE_stack_0001_0001, 66; ST_L_NE_stack_0001_0001, 67; ST_L_NE_stack_0001_0001, 68; ST_L_NE_stack_0001_0001, 69; ST_L_NE_stack_0001_0001, 70; ST_L_NE_stack_0001_0001, 71; ST_L_NE_stack_0001_0001, 72
+[2023-02-26 11:04:46,901] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:04:47,901] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0001, 73; ST_L_NE_stack_0001_0001, 74; ST_L_NE_stack_0001_0001, 75; ST_L_NE_stack_0001_0001, 76; ST_L_NE_stack_0001_0001, 77; ST_L_NE_stack_0001_0001, 78; ST_L_NE_stack_0001_0001, 79; ST_L_NE_stack_0001_0001, 80
+[2023-02-26 11:04:49,909] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:04:50,911] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0001, 81; ST_L_NE_stack_0001_0001, 82; ST_L_NE_stack_0001_0001, 83; ST_L_NE_stack_0001_0001, 84; ST_L_NE_stack_0001_0001, 85; ST_L_NE_stack_0001_0001, 86; ST_L_NE_stack_0001_0001, 87; ST_L_NE_stack_0001_0001, 88
+[2023-02-26 11:04:51,918] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:04:53,919] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0001, 89; ST_L_NE_stack_0001_0001, 90; ST_L_NE_stack_0001_0001, 91; ST_L_NE_stack_0001_0001, 92; ST_L_NE_stack_0001_0001, 93; ST_L_NE_stack_0001_0001, 94; ST_L_NE_stack_0001_0001, 95; ST_L_NE_stack_0001_0001, 96
+[2023-02-26 11:04:54,926] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:04:55,927] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0001, 1; ST_L_NE_stack_0002_0001, 2; ST_L_NE_stack_0002_0001, 3; ST_L_NE_stack_0002_0001, 4; ST_L_NE_stack_0002_0001, 5; ST_L_NE_stack_0002_0001, 6; ST_L_NE_stack_0002_0001, 7; ST_L_NE_stack_0002_0001, 8
+[2023-02-26 11:04:57,935] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:04:58,936] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0001, 9; ST_L_NE_stack_0002_0001, 10; ST_L_NE_stack_0002_0001, 11; ST_L_NE_stack_0002_0001, 12; ST_L_NE_stack_0002_0001, 13; ST_L_NE_stack_0002_0001, 14; ST_L_NE_stack_0002_0001, 15; ST_L_NE_stack_0002_0001, 16
+[2023-02-26 11:04:59,943] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:05:01,945] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0001, 17; ST_L_NE_stack_0002_0001, 18; ST_L_NE_stack_0002_0001, 19; ST_L_NE_stack_0002_0001, 20; ST_L_NE_stack_0002_0001, 21; ST_L_NE_stack_0002_0001, 22; ST_L_NE_stack_0002_0001, 23; ST_L_NE_stack_0002_0001, 24
+[2023-02-26 11:05:03,954] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:05:04,955] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0001, 25; ST_L_NE_stack_0002_0001, 26; ST_L_NE_stack_0002_0001, 27; ST_L_NE_stack_0002_0001, 28; ST_L_NE_stack_0002_0001, 29; ST_L_NE_stack_0002_0001, 30; ST_L_NE_stack_0002_0001, 31; ST_L_NE_stack_0002_0001, 32
+[2023-02-26 11:05:06,962] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:05:08,964] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0001, 33; ST_L_NE_stack_0002_0001, 34; ST_L_NE_stack_0002_0001, 35; ST_L_NE_stack_0002_0001, 36; ST_L_NE_stack_0002_0001, 37; ST_L_NE_stack_0002_0001, 38; ST_L_NE_stack_0002_0001, 39; ST_L_NE_stack_0002_0001, 40
+[2023-02-26 11:05:09,970] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:05:10,971] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0001, 41; ST_L_NE_stack_0002_0001, 42; ST_L_NE_stack_0002_0001, 43; ST_L_NE_stack_0002_0001, 44; ST_L_NE_stack_0002_0001, 45; ST_L_NE_stack_0002_0001, 46; ST_L_NE_stack_0002_0001, 47; ST_L_NE_stack_0002_0001, 48
+[2023-02-26 11:05:12,980] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:05:13,981] pyhamilton.interface INFO sending end run command to simulator
+[2023-02-26 11:05:15,481] pyhamilton.interface ERROR HamiltonTimeoutError('Timed out after 1.5 sec while waiting for response id 0x0')
+[2023-02-26 11:05:15,481] pyhamilton.interface INFO disconnected from server
+[2023-02-26 11:05:15,582] pyhamilton.interface INFO server did not exit yet, sending dummy request to exit its loop
+[2023-02-26 11:05:15,582] urllib3.util.retry DEBUG Converted retries value: 20 -> Retry(total=20, connect=None, read=None, redirect=None, status=None)
+[2023-02-26 11:05:15,588] urllib3.connectionpool DEBUG Starting new HTTP connection (1): 127.0.0.1:3221
+[2023-02-26 11:05:15,589] urllib3.connectionpool DEBUG http://127.0.0.1:3221 "GET / HTTP/1.1" 200 None
+[2023-02-26 11:05:15,589] pyhamilton.interface INFO dummy get request sent to server
+[2023-02-26 11:05:15,589] pyhamilton.interface INFO server thread exited
+[2023-02-26 11:26:16,915] root INFO #################################################################
+[2023-02-26 11:26:16,915] root INFO #                                                               #
+[2023-02-26 11:26:16,916] root INFO #     Begin execution of C:\Users\stefa\ntr_john\NTR\ntr.py     #
+[2023-02-26 11:26:16,916] root INFO #                                                               #
+[2023-02-26 11:26:16,916] root INFO #################################################################
+[2023-02-26 11:26:16,916] pyhamilton.interface INFO starting a Hamilton interface
+[2023-02-26 11:26:16,916] pyhamilton.interface INFO started the oem application for simulation
+[2023-02-26 11:26:16,916] pyhamilton.interface INFO started the server thread
+[2023-02-26 11:26:16,916] root INFO tip_pick_up_96: Pick up tips at TIP_50ul_L_NE_stack_0001_0004
+[2023-02-26 11:26:17,924] root INFO tip_eject_96: Eject tips to default waste
+[2023-02-26 11:26:18,924] root INFO tip_pick_up_96: Pick up tips at TIP_50ul_L_NE_stack_0002_0004
+[2023-02-26 11:26:21,934] root INFO tip_eject_96: Eject tips to default waste
+[2023-02-26 11:26:23,935] root INFO get_plate: Getting plate TIP_50ul_L_NE_stack_0001_0004
+[2023-02-26 11:26:24,937] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 11:26:25,938] root INFO get_plate: Getting plate TIP_50ul_L_NE_stack_0002_0004
+[2023-02-26 11:26:27,939] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 11:26:28,940] root INFO tip_pick_up_96: Pick up tips at TIP_50ul_L_NE_stack_0001_0003
+[2023-02-26 11:26:30,947] root INFO tip_eject_96: Eject tips to default waste
+[2023-02-26 11:26:32,948] root INFO tip_pick_up_96: Pick up tips at TIP_50ul_L_NE_stack_0002_0003
+[2023-02-26 11:26:35,960] root INFO tip_eject_96: Eject tips to default waste
+[2023-02-26 11:26:36,960] root INFO get_plate: Getting plate TIP_50ul_L_NE_stack_0001_0003
+[2023-02-26 11:26:37,961] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 11:26:39,962] root INFO get_plate: Getting plate TIP_50ul_L_NE_stack_0002_0003
+[2023-02-26 11:26:41,964] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 11:26:43,965] root INFO tip_pick_up_96: Pick up tips at TIP_50ul_L_NE_stack_0001_0002
+[2023-02-26 11:26:46,971] root INFO tip_eject_96: Eject tips to default waste
+[2023-02-26 11:26:47,972] root INFO tip_pick_up_96: Pick up tips at TIP_50ul_L_NE_stack_0002_0002
+[2023-02-26 11:26:49,979] root INFO tip_eject_96: Eject tips to default waste
+[2023-02-26 11:26:50,979] root INFO get_plate: Getting plate TIP_50ul_L_NE_stack_0001_0002
+[2023-02-26 11:26:52,980] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 11:26:53,981] root INFO get_plate: Getting plate TIP_50ul_L_NE_stack_0002_0002
+[2023-02-26 11:26:55,982] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 11:26:56,984] root INFO tip_pick_up_96: Pick up tips at TIP_50ul_L_NE_stack_0001_0001
+[2023-02-26 11:26:58,995] root INFO tip_eject_96: Eject tips to default waste
+[2023-02-26 11:26:59,996] root INFO tip_pick_up_96: Pick up tips at TIP_50ul_L_NE_stack_0002_0001
+[2023-02-26 11:27:02,002] root INFO tip_eject_96: Eject tips to default waste
+[2023-02-26 11:27:04,004] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0004, 1; TIP_50ul_L_NE_stack_0001_0004, 2; TIP_50ul_L_NE_stack_0001_0004, 3; TIP_50ul_L_NE_stack_0001_0004, 4; TIP_50ul_L_NE_stack_0001_0004, 5; TIP_50ul_L_NE_stack_0001_0004, 6; TIP_50ul_L_NE_stack_0001_0004, 7; TIP_50ul_L_NE_stack_0001_0004, 8
+[2023-02-26 11:27:06,014] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:27:07,015] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 1; ST_L_NE_stack_0001_0004, 2; ST_L_NE_stack_0001_0004, 3; ST_L_NE_stack_0001_0004, 4; ST_L_NE_stack_0001_0004, 5; ST_L_NE_stack_0001_0004, 6; ST_L_NE_stack_0001_0004, 7; ST_L_NE_stack_0001_0004, 8
+[2023-02-26 11:27:08,023] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:27:09,023] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0004, 9; TIP_50ul_L_NE_stack_0001_0004, 10; TIP_50ul_L_NE_stack_0001_0004, 11; TIP_50ul_L_NE_stack_0001_0004, 12; TIP_50ul_L_NE_stack_0001_0004, 13; TIP_50ul_L_NE_stack_0001_0004, 14; TIP_50ul_L_NE_stack_0001_0004, 15; TIP_50ul_L_NE_stack_0001_0004, 16
+[2023-02-26 11:27:11,033] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:27:12,034] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 9; ST_L_NE_stack_0001_0004, 10; ST_L_NE_stack_0001_0004, 11; ST_L_NE_stack_0001_0004, 12; ST_L_NE_stack_0001_0004, 13; ST_L_NE_stack_0001_0004, 14; ST_L_NE_stack_0001_0004, 15; ST_L_NE_stack_0001_0004, 16
+[2023-02-26 11:27:13,041] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:27:14,043] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0004, 17; TIP_50ul_L_NE_stack_0001_0004, 18; TIP_50ul_L_NE_stack_0001_0004, 19; TIP_50ul_L_NE_stack_0001_0004, 20; TIP_50ul_L_NE_stack_0001_0004, 21; TIP_50ul_L_NE_stack_0001_0004, 22; TIP_50ul_L_NE_stack_0001_0004, 23; TIP_50ul_L_NE_stack_0001_0004, 24
+[2023-02-26 11:27:16,051] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:27:17,052] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 17; ST_L_NE_stack_0001_0004, 18; ST_L_NE_stack_0001_0004, 19; ST_L_NE_stack_0001_0004, 20; ST_L_NE_stack_0001_0004, 21; ST_L_NE_stack_0001_0004, 22; ST_L_NE_stack_0001_0004, 23; ST_L_NE_stack_0001_0004, 24
+[2023-02-26 11:27:18,059] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:27:19,060] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0004, 25; TIP_50ul_L_NE_stack_0001_0004, 26; TIP_50ul_L_NE_stack_0001_0004, 27; TIP_50ul_L_NE_stack_0001_0004, 28; TIP_50ul_L_NE_stack_0001_0004, 29; TIP_50ul_L_NE_stack_0001_0004, 30; TIP_50ul_L_NE_stack_0001_0004, 31; TIP_50ul_L_NE_stack_0001_0004, 32
+[2023-02-26 11:27:21,070] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:27:23,071] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 25; ST_L_NE_stack_0001_0004, 26; ST_L_NE_stack_0001_0004, 27; ST_L_NE_stack_0001_0004, 28; ST_L_NE_stack_0001_0004, 29; ST_L_NE_stack_0001_0004, 30; ST_L_NE_stack_0001_0004, 31; ST_L_NE_stack_0001_0004, 32
+[2023-02-26 11:27:24,079] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:27:25,080] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0004, 33; TIP_50ul_L_NE_stack_0001_0004, 34; TIP_50ul_L_NE_stack_0001_0004, 35; TIP_50ul_L_NE_stack_0001_0004, 36; TIP_50ul_L_NE_stack_0001_0004, 37; TIP_50ul_L_NE_stack_0001_0004, 38; TIP_50ul_L_NE_stack_0001_0004, 39; TIP_50ul_L_NE_stack_0001_0004, 40
+[2023-02-26 11:27:27,090] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:27:29,091] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 33; ST_L_NE_stack_0001_0004, 34; ST_L_NE_stack_0001_0004, 35; ST_L_NE_stack_0001_0004, 36; ST_L_NE_stack_0001_0004, 37; ST_L_NE_stack_0001_0004, 38; ST_L_NE_stack_0001_0004, 39; ST_L_NE_stack_0001_0004, 40
+[2023-02-26 11:27:30,097] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:27:31,099] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0004, 41; TIP_50ul_L_NE_stack_0001_0004, 42; TIP_50ul_L_NE_stack_0001_0004, 43; TIP_50ul_L_NE_stack_0001_0004, 44; TIP_50ul_L_NE_stack_0001_0004, 45; TIP_50ul_L_NE_stack_0001_0004, 46; TIP_50ul_L_NE_stack_0001_0004, 47; TIP_50ul_L_NE_stack_0001_0004, 48
+[2023-02-26 11:27:33,108] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:27:35,110] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 41; ST_L_NE_stack_0001_0004, 42; ST_L_NE_stack_0001_0004, 43; ST_L_NE_stack_0001_0004, 44; ST_L_NE_stack_0001_0004, 45; ST_L_NE_stack_0001_0004, 46; ST_L_NE_stack_0001_0004, 47; ST_L_NE_stack_0001_0004, 48
+[2023-02-26 11:27:36,116] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:27:37,118] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0004, 49; TIP_50ul_L_NE_stack_0001_0004, 50; TIP_50ul_L_NE_stack_0001_0004, 51; TIP_50ul_L_NE_stack_0001_0004, 52; TIP_50ul_L_NE_stack_0001_0004, 53; TIP_50ul_L_NE_stack_0001_0004, 54; TIP_50ul_L_NE_stack_0001_0004, 55; TIP_50ul_L_NE_stack_0001_0004, 56
+[2023-02-26 11:27:39,129] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:27:40,130] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 49; ST_L_NE_stack_0001_0004, 50; ST_L_NE_stack_0001_0004, 51; ST_L_NE_stack_0001_0004, 52; ST_L_NE_stack_0001_0004, 53; ST_L_NE_stack_0001_0004, 54; ST_L_NE_stack_0001_0004, 55; ST_L_NE_stack_0001_0004, 56
+[2023-02-26 11:27:41,136] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:27:42,136] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0004, 57; TIP_50ul_L_NE_stack_0001_0004, 58; TIP_50ul_L_NE_stack_0001_0004, 59; TIP_50ul_L_NE_stack_0001_0004, 60; TIP_50ul_L_NE_stack_0001_0004, 61; TIP_50ul_L_NE_stack_0001_0004, 62; TIP_50ul_L_NE_stack_0001_0004, 63; TIP_50ul_L_NE_stack_0001_0004, 64
+[2023-02-26 11:27:44,147] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:27:45,148] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 57; ST_L_NE_stack_0001_0004, 58; ST_L_NE_stack_0001_0004, 59; ST_L_NE_stack_0001_0004, 60; ST_L_NE_stack_0001_0004, 61; ST_L_NE_stack_0001_0004, 62; ST_L_NE_stack_0001_0004, 63; ST_L_NE_stack_0001_0004, 64
+[2023-02-26 11:27:46,155] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:27:47,156] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0004, 65; TIP_50ul_L_NE_stack_0001_0004, 66; TIP_50ul_L_NE_stack_0001_0004, 67; TIP_50ul_L_NE_stack_0001_0004, 68; TIP_50ul_L_NE_stack_0001_0004, 69; TIP_50ul_L_NE_stack_0001_0004, 70; TIP_50ul_L_NE_stack_0001_0004, 71; TIP_50ul_L_NE_stack_0001_0004, 72
+[2023-02-26 11:27:49,167] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:27:50,167] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 65; ST_L_NE_stack_0001_0004, 66; ST_L_NE_stack_0001_0004, 67; ST_L_NE_stack_0001_0004, 68; ST_L_NE_stack_0001_0004, 69; ST_L_NE_stack_0001_0004, 70; ST_L_NE_stack_0001_0004, 71; ST_L_NE_stack_0001_0004, 72
+[2023-02-26 11:27:51,175] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:27:53,177] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0004, 73; TIP_50ul_L_NE_stack_0001_0004, 74; TIP_50ul_L_NE_stack_0001_0004, 75; TIP_50ul_L_NE_stack_0001_0004, 76; TIP_50ul_L_NE_stack_0001_0004, 77; TIP_50ul_L_NE_stack_0001_0004, 78; TIP_50ul_L_NE_stack_0001_0004, 79; TIP_50ul_L_NE_stack_0001_0004, 80
+[2023-02-26 11:27:54,187] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:27:55,188] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 73; ST_L_NE_stack_0001_0004, 74; ST_L_NE_stack_0001_0004, 75; ST_L_NE_stack_0001_0004, 76; ST_L_NE_stack_0001_0004, 77; ST_L_NE_stack_0001_0004, 78; ST_L_NE_stack_0001_0004, 79; ST_L_NE_stack_0001_0004, 80
+[2023-02-26 11:27:56,195] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:27:58,199] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0004, 81; TIP_50ul_L_NE_stack_0001_0004, 82; TIP_50ul_L_NE_stack_0001_0004, 83; TIP_50ul_L_NE_stack_0001_0004, 84; TIP_50ul_L_NE_stack_0001_0004, 85; TIP_50ul_L_NE_stack_0001_0004, 86; TIP_50ul_L_NE_stack_0001_0004, 87; TIP_50ul_L_NE_stack_0001_0004, 88
+[2023-02-26 11:28:00,209] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:28:01,210] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 81; ST_L_NE_stack_0001_0004, 82; ST_L_NE_stack_0001_0004, 83; ST_L_NE_stack_0001_0004, 84; ST_L_NE_stack_0001_0004, 85; ST_L_NE_stack_0001_0004, 86; ST_L_NE_stack_0001_0004, 87; ST_L_NE_stack_0001_0004, 88
+[2023-02-26 11:28:02,218] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:28:04,219] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0004, 89; TIP_50ul_L_NE_stack_0001_0004, 90; TIP_50ul_L_NE_stack_0001_0004, 91; TIP_50ul_L_NE_stack_0001_0004, 92; TIP_50ul_L_NE_stack_0001_0004, 93; TIP_50ul_L_NE_stack_0001_0004, 94; TIP_50ul_L_NE_stack_0001_0004, 95; TIP_50ul_L_NE_stack_0001_0004, 96
+[2023-02-26 11:28:05,228] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:28:06,229] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0004, 89; ST_L_NE_stack_0001_0004, 90; ST_L_NE_stack_0001_0004, 91; ST_L_NE_stack_0001_0004, 92; ST_L_NE_stack_0001_0004, 93; ST_L_NE_stack_0001_0004, 94; ST_L_NE_stack_0001_0004, 95; ST_L_NE_stack_0001_0004, 96
+[2023-02-26 11:28:08,237] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:28:10,238] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0004, 1; TIP_50ul_L_NE_stack_0002_0004, 2; TIP_50ul_L_NE_stack_0002_0004, 3; TIP_50ul_L_NE_stack_0002_0004, 4; TIP_50ul_L_NE_stack_0002_0004, 5; TIP_50ul_L_NE_stack_0002_0004, 6; TIP_50ul_L_NE_stack_0002_0004, 7; TIP_50ul_L_NE_stack_0002_0004, 8
+[2023-02-26 11:28:11,253] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:28:12,254] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 1; ST_L_NE_stack_0002_0004, 2; ST_L_NE_stack_0002_0004, 3; ST_L_NE_stack_0002_0004, 4; ST_L_NE_stack_0002_0004, 5; ST_L_NE_stack_0002_0004, 6; ST_L_NE_stack_0002_0004, 7; ST_L_NE_stack_0002_0004, 8
+[2023-02-26 11:28:14,264] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:28:17,266] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0004, 9; TIP_50ul_L_NE_stack_0002_0004, 10; TIP_50ul_L_NE_stack_0002_0004, 11; TIP_50ul_L_NE_stack_0002_0004, 12; TIP_50ul_L_NE_stack_0002_0004, 13; TIP_50ul_L_NE_stack_0002_0004, 14; TIP_50ul_L_NE_stack_0002_0004, 15; TIP_50ul_L_NE_stack_0002_0004, 16
+[2023-02-26 11:28:18,275] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:28:19,276] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 9; ST_L_NE_stack_0002_0004, 10; ST_L_NE_stack_0002_0004, 11; ST_L_NE_stack_0002_0004, 12; ST_L_NE_stack_0002_0004, 13; ST_L_NE_stack_0002_0004, 14; ST_L_NE_stack_0002_0004, 15; ST_L_NE_stack_0002_0004, 16
+[2023-02-26 11:28:21,285] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:28:22,286] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0004, 17; TIP_50ul_L_NE_stack_0002_0004, 18; TIP_50ul_L_NE_stack_0002_0004, 19; TIP_50ul_L_NE_stack_0002_0004, 20; TIP_50ul_L_NE_stack_0002_0004, 21; TIP_50ul_L_NE_stack_0002_0004, 22; TIP_50ul_L_NE_stack_0002_0004, 23; TIP_50ul_L_NE_stack_0002_0004, 24
+[2023-02-26 11:28:23,296] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:28:24,298] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 17; ST_L_NE_stack_0002_0004, 18; ST_L_NE_stack_0002_0004, 19; ST_L_NE_stack_0002_0004, 20; ST_L_NE_stack_0002_0004, 21; ST_L_NE_stack_0002_0004, 22; ST_L_NE_stack_0002_0004, 23; ST_L_NE_stack_0002_0004, 24
+[2023-02-26 11:28:26,306] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:28:28,307] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0004, 25; TIP_50ul_L_NE_stack_0002_0004, 26; TIP_50ul_L_NE_stack_0002_0004, 27; TIP_50ul_L_NE_stack_0002_0004, 28; TIP_50ul_L_NE_stack_0002_0004, 29; TIP_50ul_L_NE_stack_0002_0004, 30; TIP_50ul_L_NE_stack_0002_0004, 31; TIP_50ul_L_NE_stack_0002_0004, 32
+[2023-02-26 11:28:29,316] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:28:30,318] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 25; ST_L_NE_stack_0002_0004, 26; ST_L_NE_stack_0002_0004, 27; ST_L_NE_stack_0002_0004, 28; ST_L_NE_stack_0002_0004, 29; ST_L_NE_stack_0002_0004, 30; ST_L_NE_stack_0002_0004, 31; ST_L_NE_stack_0002_0004, 32
+[2023-02-26 11:28:32,329] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:28:34,331] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0004, 33; TIP_50ul_L_NE_stack_0002_0004, 34; TIP_50ul_L_NE_stack_0002_0004, 35; TIP_50ul_L_NE_stack_0002_0004, 36; TIP_50ul_L_NE_stack_0002_0004, 37; TIP_50ul_L_NE_stack_0002_0004, 38; TIP_50ul_L_NE_stack_0002_0004, 39; TIP_50ul_L_NE_stack_0002_0004, 40
+[2023-02-26 11:28:35,341] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:28:36,342] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 33; ST_L_NE_stack_0002_0004, 34; ST_L_NE_stack_0002_0004, 35; ST_L_NE_stack_0002_0004, 36; ST_L_NE_stack_0002_0004, 37; ST_L_NE_stack_0002_0004, 38; ST_L_NE_stack_0002_0004, 39; ST_L_NE_stack_0002_0004, 40
+[2023-02-26 11:28:38,354] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:28:40,356] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0004, 41; TIP_50ul_L_NE_stack_0002_0004, 42; TIP_50ul_L_NE_stack_0002_0004, 43; TIP_50ul_L_NE_stack_0002_0004, 44; TIP_50ul_L_NE_stack_0002_0004, 45; TIP_50ul_L_NE_stack_0002_0004, 46; TIP_50ul_L_NE_stack_0002_0004, 47; TIP_50ul_L_NE_stack_0002_0004, 48
+[2023-02-26 11:28:41,364] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:28:42,367] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 41; ST_L_NE_stack_0002_0004, 42; ST_L_NE_stack_0002_0004, 43; ST_L_NE_stack_0002_0004, 44; ST_L_NE_stack_0002_0004, 45; ST_L_NE_stack_0002_0004, 46; ST_L_NE_stack_0002_0004, 47; ST_L_NE_stack_0002_0004, 48
+[2023-02-26 11:28:43,373] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:28:45,374] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0004, 49; TIP_50ul_L_NE_stack_0002_0004, 50; TIP_50ul_L_NE_stack_0002_0004, 51; TIP_50ul_L_NE_stack_0002_0004, 52; TIP_50ul_L_NE_stack_0002_0004, 53; TIP_50ul_L_NE_stack_0002_0004, 54; TIP_50ul_L_NE_stack_0002_0004, 55; TIP_50ul_L_NE_stack_0002_0004, 56
+[2023-02-26 11:28:46,384] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:28:47,385] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 49; ST_L_NE_stack_0002_0004, 50; ST_L_NE_stack_0002_0004, 51; ST_L_NE_stack_0002_0004, 52; ST_L_NE_stack_0002_0004, 53; ST_L_NE_stack_0002_0004, 54; ST_L_NE_stack_0002_0004, 55; ST_L_NE_stack_0002_0004, 56
+[2023-02-26 11:28:49,393] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:28:51,395] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0004, 57; TIP_50ul_L_NE_stack_0002_0004, 58; TIP_50ul_L_NE_stack_0002_0004, 59; TIP_50ul_L_NE_stack_0002_0004, 60; TIP_50ul_L_NE_stack_0002_0004, 61; TIP_50ul_L_NE_stack_0002_0004, 62; TIP_50ul_L_NE_stack_0002_0004, 63; TIP_50ul_L_NE_stack_0002_0004, 64
+[2023-02-26 11:28:52,405] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:28:53,406] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 57; ST_L_NE_stack_0002_0004, 58; ST_L_NE_stack_0002_0004, 59; ST_L_NE_stack_0002_0004, 60; ST_L_NE_stack_0002_0004, 61; ST_L_NE_stack_0002_0004, 62; ST_L_NE_stack_0002_0004, 63; ST_L_NE_stack_0002_0004, 64
+[2023-02-26 11:28:55,417] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:28:56,418] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0004, 65; TIP_50ul_L_NE_stack_0002_0004, 66; TIP_50ul_L_NE_stack_0002_0004, 67; TIP_50ul_L_NE_stack_0002_0004, 68; TIP_50ul_L_NE_stack_0002_0004, 69; TIP_50ul_L_NE_stack_0002_0004, 70; TIP_50ul_L_NE_stack_0002_0004, 71; TIP_50ul_L_NE_stack_0002_0004, 72
+[2023-02-26 11:28:57,428] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:28:58,429] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 65; ST_L_NE_stack_0002_0004, 66; ST_L_NE_stack_0002_0004, 67; ST_L_NE_stack_0002_0004, 68; ST_L_NE_stack_0002_0004, 69; ST_L_NE_stack_0002_0004, 70; ST_L_NE_stack_0002_0004, 71; ST_L_NE_stack_0002_0004, 72
+[2023-02-26 11:29:00,436] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:29:01,437] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0004, 73; TIP_50ul_L_NE_stack_0002_0004, 74; TIP_50ul_L_NE_stack_0002_0004, 75; TIP_50ul_L_NE_stack_0002_0004, 76; TIP_50ul_L_NE_stack_0002_0004, 77; TIP_50ul_L_NE_stack_0002_0004, 78; TIP_50ul_L_NE_stack_0002_0004, 79; TIP_50ul_L_NE_stack_0002_0004, 80
+[2023-02-26 11:29:02,447] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:29:03,448] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 73; ST_L_NE_stack_0002_0004, 74; ST_L_NE_stack_0002_0004, 75; ST_L_NE_stack_0002_0004, 76; ST_L_NE_stack_0002_0004, 77; ST_L_NE_stack_0002_0004, 78; ST_L_NE_stack_0002_0004, 79; ST_L_NE_stack_0002_0004, 80
+[2023-02-26 11:29:05,459] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:29:06,460] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0004, 81; TIP_50ul_L_NE_stack_0002_0004, 82; TIP_50ul_L_NE_stack_0002_0004, 83; TIP_50ul_L_NE_stack_0002_0004, 84; TIP_50ul_L_NE_stack_0002_0004, 85; TIP_50ul_L_NE_stack_0002_0004, 86; TIP_50ul_L_NE_stack_0002_0004, 87; TIP_50ul_L_NE_stack_0002_0004, 88
+[2023-02-26 11:29:07,470] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:29:08,471] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 81; ST_L_NE_stack_0002_0004, 82; ST_L_NE_stack_0002_0004, 83; ST_L_NE_stack_0002_0004, 84; ST_L_NE_stack_0002_0004, 85; ST_L_NE_stack_0002_0004, 86; ST_L_NE_stack_0002_0004, 87; ST_L_NE_stack_0002_0004, 88
+[2023-02-26 11:29:10,482] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:29:12,484] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0004, 89; TIP_50ul_L_NE_stack_0002_0004, 90; TIP_50ul_L_NE_stack_0002_0004, 91; TIP_50ul_L_NE_stack_0002_0004, 92; TIP_50ul_L_NE_stack_0002_0004, 93; TIP_50ul_L_NE_stack_0002_0004, 94; TIP_50ul_L_NE_stack_0002_0004, 95; TIP_50ul_L_NE_stack_0002_0004, 96
+[2023-02-26 11:29:13,493] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:29:14,493] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0004, 89; ST_L_NE_stack_0002_0004, 90; ST_L_NE_stack_0002_0004, 91; ST_L_NE_stack_0002_0004, 92; ST_L_NE_stack_0002_0004, 93; ST_L_NE_stack_0002_0004, 94; ST_L_NE_stack_0002_0004, 95; ST_L_NE_stack_0002_0004, 96
+[2023-02-26 11:29:16,500] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:29:18,502] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0003_0004, 1; TIP_50ul_L_NE_stack_0003_0004, 2; TIP_50ul_L_NE_stack_0003_0004, 3; TIP_50ul_L_NE_stack_0003_0004, 4; TIP_50ul_L_NE_stack_0003_0004, 5; TIP_50ul_L_NE_stack_0003_0004, 6; TIP_50ul_L_NE_stack_0003_0004, 7; TIP_50ul_L_NE_stack_0003_0004, 8
+[2023-02-26 11:29:19,512] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:29:20,513] root INFO get_plate: Getting plate ST_L_NE_stack_0001_0004
+[2023-02-26 11:29:22,515] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 11:29:23,516] root INFO get_plate: Getting plate ST_L_NE_stack_0002_0004
+[2023-02-26 11:29:25,516] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 11:29:27,517] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0003, 1; ST_L_NE_stack_0001_0003, 2; ST_L_NE_stack_0001_0003, 3; ST_L_NE_stack_0001_0003, 4; ST_L_NE_stack_0001_0003, 5; ST_L_NE_stack_0001_0003, 6; ST_L_NE_stack_0001_0003, 7; ST_L_NE_stack_0001_0003, 8
+[2023-02-26 11:29:28,524] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:29:29,526] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0003_0004, 9; TIP_50ul_L_NE_stack_0003_0004, 10; TIP_50ul_L_NE_stack_0003_0004, 11; TIP_50ul_L_NE_stack_0003_0004, 12; TIP_50ul_L_NE_stack_0003_0004, 13; TIP_50ul_L_NE_stack_0003_0004, 14; TIP_50ul_L_NE_stack_0003_0004, 15; TIP_50ul_L_NE_stack_0003_0004, 16
+[2023-02-26 11:29:31,541] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:29:32,543] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0003, 9; ST_L_NE_stack_0001_0003, 10; ST_L_NE_stack_0001_0003, 11; ST_L_NE_stack_0001_0003, 12; ST_L_NE_stack_0001_0003, 13; ST_L_NE_stack_0001_0003, 14; ST_L_NE_stack_0001_0003, 15; ST_L_NE_stack_0001_0003, 16
+[2023-02-26 11:29:33,551] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:29:35,553] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0003_0004, 17; TIP_50ul_L_NE_stack_0003_0004, 18; TIP_50ul_L_NE_stack_0003_0004, 19; TIP_50ul_L_NE_stack_0003_0004, 20; TIP_50ul_L_NE_stack_0003_0004, 21; TIP_50ul_L_NE_stack_0003_0004, 22; TIP_50ul_L_NE_stack_0003_0004, 23; TIP_50ul_L_NE_stack_0003_0004, 24
+[2023-02-26 11:29:36,562] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:29:37,563] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0003, 17; ST_L_NE_stack_0001_0003, 18; ST_L_NE_stack_0001_0003, 19; ST_L_NE_stack_0001_0003, 20; ST_L_NE_stack_0001_0003, 21; ST_L_NE_stack_0001_0003, 22; ST_L_NE_stack_0001_0003, 23; ST_L_NE_stack_0001_0003, 24
+[2023-02-26 11:29:39,573] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:29:41,576] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0003_0004, 25; TIP_50ul_L_NE_stack_0003_0004, 26; TIP_50ul_L_NE_stack_0003_0004, 27; TIP_50ul_L_NE_stack_0003_0004, 28; TIP_50ul_L_NE_stack_0003_0004, 29; TIP_50ul_L_NE_stack_0003_0004, 30; TIP_50ul_L_NE_stack_0003_0004, 31; TIP_50ul_L_NE_stack_0003_0004, 32
+[2023-02-26 11:29:42,586] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:29:43,587] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0003, 25; ST_L_NE_stack_0001_0003, 26; ST_L_NE_stack_0001_0003, 27; ST_L_NE_stack_0001_0003, 28; ST_L_NE_stack_0001_0003, 29; ST_L_NE_stack_0001_0003, 30; ST_L_NE_stack_0001_0003, 31; ST_L_NE_stack_0001_0003, 32
+[2023-02-26 11:29:45,596] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:29:46,597] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0003_0004, 33; TIP_50ul_L_NE_stack_0003_0004, 34; TIP_50ul_L_NE_stack_0003_0004, 35; TIP_50ul_L_NE_stack_0003_0004, 36; TIP_50ul_L_NE_stack_0003_0004, 37; TIP_50ul_L_NE_stack_0003_0004, 38; TIP_50ul_L_NE_stack_0003_0004, 39; TIP_50ul_L_NE_stack_0003_0004, 40
+[2023-02-26 11:29:47,607] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:29:48,608] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0003, 33; ST_L_NE_stack_0001_0003, 34; ST_L_NE_stack_0001_0003, 35; ST_L_NE_stack_0001_0003, 36; ST_L_NE_stack_0001_0003, 37; ST_L_NE_stack_0001_0003, 38; ST_L_NE_stack_0001_0003, 39; ST_L_NE_stack_0001_0003, 40
+[2023-02-26 11:29:50,615] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:29:51,615] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0003_0004, 41; TIP_50ul_L_NE_stack_0003_0004, 42; TIP_50ul_L_NE_stack_0003_0004, 43; TIP_50ul_L_NE_stack_0003_0004, 44; TIP_50ul_L_NE_stack_0003_0004, 45; TIP_50ul_L_NE_stack_0003_0004, 46; TIP_50ul_L_NE_stack_0003_0004, 47; TIP_50ul_L_NE_stack_0003_0004, 48
+[2023-02-26 11:29:52,624] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:29:53,625] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0003, 41; ST_L_NE_stack_0001_0003, 42; ST_L_NE_stack_0001_0003, 43; ST_L_NE_stack_0001_0003, 44; ST_L_NE_stack_0001_0003, 45; ST_L_NE_stack_0001_0003, 46; ST_L_NE_stack_0001_0003, 47; ST_L_NE_stack_0001_0003, 48
+[2023-02-26 11:29:55,633] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:29:56,634] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0003_0004, 49; TIP_50ul_L_NE_stack_0003_0004, 50; TIP_50ul_L_NE_stack_0003_0004, 51; TIP_50ul_L_NE_stack_0003_0004, 52; TIP_50ul_L_NE_stack_0003_0004, 53; TIP_50ul_L_NE_stack_0003_0004, 54; TIP_50ul_L_NE_stack_0003_0004, 55; TIP_50ul_L_NE_stack_0003_0004, 56
+[2023-02-26 11:29:57,644] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:29:58,645] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0003, 49; ST_L_NE_stack_0001_0003, 50; ST_L_NE_stack_0001_0003, 51; ST_L_NE_stack_0001_0003, 52; ST_L_NE_stack_0001_0003, 53; ST_L_NE_stack_0001_0003, 54; ST_L_NE_stack_0001_0003, 55; ST_L_NE_stack_0001_0003, 56
+[2023-02-26 11:30:00,653] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:30:01,653] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0003_0004, 57; TIP_50ul_L_NE_stack_0003_0004, 58; TIP_50ul_L_NE_stack_0003_0004, 59; TIP_50ul_L_NE_stack_0003_0004, 60; TIP_50ul_L_NE_stack_0003_0004, 61; TIP_50ul_L_NE_stack_0003_0004, 62; TIP_50ul_L_NE_stack_0003_0004, 63; TIP_50ul_L_NE_stack_0003_0004, 64
+[2023-02-26 11:30:03,666] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:30:05,669] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0003, 57; ST_L_NE_stack_0001_0003, 58; ST_L_NE_stack_0001_0003, 59; ST_L_NE_stack_0001_0003, 60; ST_L_NE_stack_0001_0003, 61; ST_L_NE_stack_0001_0003, 62; ST_L_NE_stack_0001_0003, 63; ST_L_NE_stack_0001_0003, 64
+[2023-02-26 11:30:06,676] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:30:07,677] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0003_0004, 65; TIP_50ul_L_NE_stack_0003_0004, 66; TIP_50ul_L_NE_stack_0003_0004, 67; TIP_50ul_L_NE_stack_0003_0004, 68; TIP_50ul_L_NE_stack_0003_0004, 69; TIP_50ul_L_NE_stack_0003_0004, 70; TIP_50ul_L_NE_stack_0003_0004, 71; TIP_50ul_L_NE_stack_0003_0004, 72
+[2023-02-26 11:30:09,693] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:30:11,696] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0003, 65; ST_L_NE_stack_0001_0003, 66; ST_L_NE_stack_0001_0003, 67; ST_L_NE_stack_0001_0003, 68; ST_L_NE_stack_0001_0003, 69; ST_L_NE_stack_0001_0003, 70; ST_L_NE_stack_0001_0003, 71; ST_L_NE_stack_0001_0003, 72
+[2023-02-26 11:30:12,703] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:30:13,704] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0003_0004, 73; TIP_50ul_L_NE_stack_0003_0004, 74; TIP_50ul_L_NE_stack_0003_0004, 75; TIP_50ul_L_NE_stack_0003_0004, 76; TIP_50ul_L_NE_stack_0003_0004, 77; TIP_50ul_L_NE_stack_0003_0004, 78; TIP_50ul_L_NE_stack_0003_0004, 79; TIP_50ul_L_NE_stack_0003_0004, 80
+[2023-02-26 11:30:17,717] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:30:18,718] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0003, 73; ST_L_NE_stack_0001_0003, 74; ST_L_NE_stack_0001_0003, 75; ST_L_NE_stack_0001_0003, 76; ST_L_NE_stack_0001_0003, 77; ST_L_NE_stack_0001_0003, 78; ST_L_NE_stack_0001_0003, 79; ST_L_NE_stack_0001_0003, 80
+[2023-02-26 11:30:19,726] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:30:20,727] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0003_0004, 81; TIP_50ul_L_NE_stack_0003_0004, 82; TIP_50ul_L_NE_stack_0003_0004, 83; TIP_50ul_L_NE_stack_0003_0004, 84; TIP_50ul_L_NE_stack_0003_0004, 85; TIP_50ul_L_NE_stack_0003_0004, 86; TIP_50ul_L_NE_stack_0003_0004, 87; TIP_50ul_L_NE_stack_0003_0004, 88
+[2023-02-26 11:30:22,738] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:30:23,738] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0003, 81; ST_L_NE_stack_0001_0003, 82; ST_L_NE_stack_0001_0003, 83; ST_L_NE_stack_0001_0003, 84; ST_L_NE_stack_0001_0003, 85; ST_L_NE_stack_0001_0003, 86; ST_L_NE_stack_0001_0003, 87; ST_L_NE_stack_0001_0003, 88
+[2023-02-26 11:30:24,746] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:30:25,747] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0003_0004, 89; TIP_50ul_L_NE_stack_0003_0004, 90; TIP_50ul_L_NE_stack_0003_0004, 91; TIP_50ul_L_NE_stack_0003_0004, 92; TIP_50ul_L_NE_stack_0003_0004, 93; TIP_50ul_L_NE_stack_0003_0004, 94; TIP_50ul_L_NE_stack_0003_0004, 95; TIP_50ul_L_NE_stack_0003_0004, 96
+[2023-02-26 11:30:27,758] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:30:28,760] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0003, 89; ST_L_NE_stack_0001_0003, 90; ST_L_NE_stack_0001_0003, 91; ST_L_NE_stack_0001_0003, 92; ST_L_NE_stack_0001_0003, 93; ST_L_NE_stack_0001_0003, 94; ST_L_NE_stack_0001_0003, 95; ST_L_NE_stack_0001_0003, 96
+[2023-02-26 11:30:29,767] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:30:30,769] root INFO get_plate: Getting plate TIP_50ul_L_NE_stack_0001_0004
+[2023-02-26 11:30:32,769] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 11:30:33,770] root INFO get_plate: Getting plate TIP_50ul_L_NE_stack_0002_0004
+[2023-02-26 11:30:35,772] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 11:30:37,773] root INFO get_plate: Getting plate TIP_50ul_L_NE_stack_0003_0004
+[2023-02-26 11:30:38,774] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 11:30:40,775] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0003, 1; TIP_50ul_L_NE_stack_0001_0003, 2; TIP_50ul_L_NE_stack_0001_0003, 3; TIP_50ul_L_NE_stack_0001_0003, 4; TIP_50ul_L_NE_stack_0001_0003, 5; TIP_50ul_L_NE_stack_0001_0003, 6; TIP_50ul_L_NE_stack_0001_0003, 7; TIP_50ul_L_NE_stack_0001_0003, 8
+[2023-02-26 11:30:41,785] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:30:42,786] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0003, 1; ST_L_NE_stack_0002_0003, 2; ST_L_NE_stack_0002_0003, 3; ST_L_NE_stack_0002_0003, 4; ST_L_NE_stack_0002_0003, 5; ST_L_NE_stack_0002_0003, 6; ST_L_NE_stack_0002_0003, 7; ST_L_NE_stack_0002_0003, 8
+[2023-02-26 11:30:43,793] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:30:45,794] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0003, 9; TIP_50ul_L_NE_stack_0001_0003, 10; TIP_50ul_L_NE_stack_0001_0003, 11; TIP_50ul_L_NE_stack_0001_0003, 12; TIP_50ul_L_NE_stack_0001_0003, 13; TIP_50ul_L_NE_stack_0001_0003, 14; TIP_50ul_L_NE_stack_0001_0003, 15; TIP_50ul_L_NE_stack_0001_0003, 16
+[2023-02-26 11:30:46,804] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:30:47,805] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0003, 9; ST_L_NE_stack_0002_0003, 10; ST_L_NE_stack_0002_0003, 11; ST_L_NE_stack_0002_0003, 12; ST_L_NE_stack_0002_0003, 13; ST_L_NE_stack_0002_0003, 14; ST_L_NE_stack_0002_0003, 15; ST_L_NE_stack_0002_0003, 16
+[2023-02-26 11:30:49,817] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:30:51,820] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0003, 17; TIP_50ul_L_NE_stack_0001_0003, 18; TIP_50ul_L_NE_stack_0001_0003, 19; TIP_50ul_L_NE_stack_0001_0003, 20; TIP_50ul_L_NE_stack_0001_0003, 21; TIP_50ul_L_NE_stack_0001_0003, 22; TIP_50ul_L_NE_stack_0001_0003, 23; TIP_50ul_L_NE_stack_0001_0003, 24
+[2023-02-26 11:30:52,834] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:30:53,835] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0003, 17; ST_L_NE_stack_0002_0003, 18; ST_L_NE_stack_0002_0003, 19; ST_L_NE_stack_0002_0003, 20; ST_L_NE_stack_0002_0003, 21; ST_L_NE_stack_0002_0003, 22; ST_L_NE_stack_0002_0003, 23; ST_L_NE_stack_0002_0003, 24
+[2023-02-26 11:30:54,842] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:30:56,845] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0003, 25; TIP_50ul_L_NE_stack_0001_0003, 26; TIP_50ul_L_NE_stack_0001_0003, 27; TIP_50ul_L_NE_stack_0001_0003, 28; TIP_50ul_L_NE_stack_0001_0003, 29; TIP_50ul_L_NE_stack_0001_0003, 30; TIP_50ul_L_NE_stack_0001_0003, 31; TIP_50ul_L_NE_stack_0001_0003, 32
+[2023-02-26 11:30:58,856] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:30:59,857] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0003, 25; ST_L_NE_stack_0002_0003, 26; ST_L_NE_stack_0002_0003, 27; ST_L_NE_stack_0002_0003, 28; ST_L_NE_stack_0002_0003, 29; ST_L_NE_stack_0002_0003, 30; ST_L_NE_stack_0002_0003, 31; ST_L_NE_stack_0002_0003, 32
+[2023-02-26 11:31:00,863] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:31:02,864] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0003, 33; TIP_50ul_L_NE_stack_0001_0003, 34; TIP_50ul_L_NE_stack_0001_0003, 35; TIP_50ul_L_NE_stack_0001_0003, 36; TIP_50ul_L_NE_stack_0001_0003, 37; TIP_50ul_L_NE_stack_0001_0003, 38; TIP_50ul_L_NE_stack_0001_0003, 39; TIP_50ul_L_NE_stack_0001_0003, 40
+[2023-02-26 11:31:04,876] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:31:05,877] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0003, 33; ST_L_NE_stack_0002_0003, 34; ST_L_NE_stack_0002_0003, 35; ST_L_NE_stack_0002_0003, 36; ST_L_NE_stack_0002_0003, 37; ST_L_NE_stack_0002_0003, 38; ST_L_NE_stack_0002_0003, 39; ST_L_NE_stack_0002_0003, 40
+[2023-02-26 11:31:06,884] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:31:08,885] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0003, 41; TIP_50ul_L_NE_stack_0001_0003, 42; TIP_50ul_L_NE_stack_0001_0003, 43; TIP_50ul_L_NE_stack_0001_0003, 44; TIP_50ul_L_NE_stack_0001_0003, 45; TIP_50ul_L_NE_stack_0001_0003, 46; TIP_50ul_L_NE_stack_0001_0003, 47; TIP_50ul_L_NE_stack_0001_0003, 48
+[2023-02-26 11:31:09,894] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:31:10,896] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0003, 41; ST_L_NE_stack_0002_0003, 42; ST_L_NE_stack_0002_0003, 43; ST_L_NE_stack_0002_0003, 44; ST_L_NE_stack_0002_0003, 45; ST_L_NE_stack_0002_0003, 46; ST_L_NE_stack_0002_0003, 47; ST_L_NE_stack_0002_0003, 48
+[2023-02-26 11:31:12,903] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:31:13,904] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0003, 49; TIP_50ul_L_NE_stack_0001_0003, 50; TIP_50ul_L_NE_stack_0001_0003, 51; TIP_50ul_L_NE_stack_0001_0003, 52; TIP_50ul_L_NE_stack_0001_0003, 53; TIP_50ul_L_NE_stack_0001_0003, 54; TIP_50ul_L_NE_stack_0001_0003, 55; TIP_50ul_L_NE_stack_0001_0003, 56
+[2023-02-26 11:31:15,915] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:31:16,916] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0003, 49; ST_L_NE_stack_0002_0003, 50; ST_L_NE_stack_0002_0003, 51; ST_L_NE_stack_0002_0003, 52; ST_L_NE_stack_0002_0003, 53; ST_L_NE_stack_0002_0003, 54; ST_L_NE_stack_0002_0003, 55; ST_L_NE_stack_0002_0003, 56
+[2023-02-26 11:31:18,924] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:31:19,925] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0003, 57; TIP_50ul_L_NE_stack_0001_0003, 58; TIP_50ul_L_NE_stack_0001_0003, 59; TIP_50ul_L_NE_stack_0001_0003, 60; TIP_50ul_L_NE_stack_0001_0003, 61; TIP_50ul_L_NE_stack_0001_0003, 62; TIP_50ul_L_NE_stack_0001_0003, 63; TIP_50ul_L_NE_stack_0001_0003, 64
+[2023-02-26 11:31:21,935] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:31:22,936] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0003, 57; ST_L_NE_stack_0002_0003, 58; ST_L_NE_stack_0002_0003, 59; ST_L_NE_stack_0002_0003, 60; ST_L_NE_stack_0002_0003, 61; ST_L_NE_stack_0002_0003, 62; ST_L_NE_stack_0002_0003, 63; ST_L_NE_stack_0002_0003, 64
+[2023-02-26 11:31:24,943] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:31:25,945] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0003, 65; TIP_50ul_L_NE_stack_0001_0003, 66; TIP_50ul_L_NE_stack_0001_0003, 67; TIP_50ul_L_NE_stack_0001_0003, 68; TIP_50ul_L_NE_stack_0001_0003, 69; TIP_50ul_L_NE_stack_0001_0003, 70; TIP_50ul_L_NE_stack_0001_0003, 71; TIP_50ul_L_NE_stack_0001_0003, 72
+[2023-02-26 11:31:26,955] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:31:28,957] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0003, 65; ST_L_NE_stack_0002_0003, 66; ST_L_NE_stack_0002_0003, 67; ST_L_NE_stack_0002_0003, 68; ST_L_NE_stack_0002_0003, 69; ST_L_NE_stack_0002_0003, 70; ST_L_NE_stack_0002_0003, 71; ST_L_NE_stack_0002_0003, 72
+[2023-02-26 11:31:29,965] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:31:31,967] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0003, 73; TIP_50ul_L_NE_stack_0001_0003, 74; TIP_50ul_L_NE_stack_0001_0003, 75; TIP_50ul_L_NE_stack_0001_0003, 76; TIP_50ul_L_NE_stack_0001_0003, 77; TIP_50ul_L_NE_stack_0001_0003, 78; TIP_50ul_L_NE_stack_0001_0003, 79; TIP_50ul_L_NE_stack_0001_0003, 80
+[2023-02-26 11:31:32,976] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:31:33,977] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0003, 73; ST_L_NE_stack_0002_0003, 74; ST_L_NE_stack_0002_0003, 75; ST_L_NE_stack_0002_0003, 76; ST_L_NE_stack_0002_0003, 77; ST_L_NE_stack_0002_0003, 78; ST_L_NE_stack_0002_0003, 79; ST_L_NE_stack_0002_0003, 80
+[2023-02-26 11:31:35,986] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:31:36,987] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0003, 81; TIP_50ul_L_NE_stack_0001_0003, 82; TIP_50ul_L_NE_stack_0001_0003, 83; TIP_50ul_L_NE_stack_0001_0003, 84; TIP_50ul_L_NE_stack_0001_0003, 85; TIP_50ul_L_NE_stack_0001_0003, 86; TIP_50ul_L_NE_stack_0001_0003, 87; TIP_50ul_L_NE_stack_0001_0003, 88
+[2023-02-26 11:31:38,997] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:31:39,998] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0003, 81; ST_L_NE_stack_0002_0003, 82; ST_L_NE_stack_0002_0003, 83; ST_L_NE_stack_0002_0003, 84; ST_L_NE_stack_0002_0003, 85; ST_L_NE_stack_0002_0003, 86; ST_L_NE_stack_0002_0003, 87; ST_L_NE_stack_0002_0003, 88
+[2023-02-26 11:31:41,005] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:31:43,007] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0003, 89; TIP_50ul_L_NE_stack_0001_0003, 90; TIP_50ul_L_NE_stack_0001_0003, 91; TIP_50ul_L_NE_stack_0001_0003, 92; TIP_50ul_L_NE_stack_0001_0003, 93; TIP_50ul_L_NE_stack_0001_0003, 94; TIP_50ul_L_NE_stack_0001_0003, 95; TIP_50ul_L_NE_stack_0001_0003, 96
+[2023-02-26 11:31:45,017] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:31:46,018] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0003, 89; ST_L_NE_stack_0002_0003, 90; ST_L_NE_stack_0002_0003, 91; ST_L_NE_stack_0002_0003, 92; ST_L_NE_stack_0002_0003, 93; ST_L_NE_stack_0002_0003, 94; ST_L_NE_stack_0002_0003, 95; ST_L_NE_stack_0002_0003, 96
+[2023-02-26 11:31:48,026] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:31:49,027] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0003, 1; TIP_50ul_L_NE_stack_0002_0003, 2; TIP_50ul_L_NE_stack_0002_0003, 3; TIP_50ul_L_NE_stack_0002_0003, 4; TIP_50ul_L_NE_stack_0002_0003, 5; TIP_50ul_L_NE_stack_0002_0003, 6; TIP_50ul_L_NE_stack_0002_0003, 7; TIP_50ul_L_NE_stack_0002_0003, 8
+[2023-02-26 11:31:51,037] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:31:52,039] root INFO get_plate: Getting plate ST_L_NE_stack_0001_0003
+[2023-02-26 11:31:54,040] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 11:31:56,041] root INFO get_plate: Getting plate ST_L_NE_stack_0002_0003
+[2023-02-26 11:31:57,042] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 11:31:59,043] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0002, 1; ST_L_NE_stack_0001_0002, 2; ST_L_NE_stack_0001_0002, 3; ST_L_NE_stack_0001_0002, 4; ST_L_NE_stack_0001_0002, 5; ST_L_NE_stack_0001_0002, 6; ST_L_NE_stack_0001_0002, 7; ST_L_NE_stack_0001_0002, 8
+[2023-02-26 11:32:00,051] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:32:01,052] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0003, 9; TIP_50ul_L_NE_stack_0002_0003, 10; TIP_50ul_L_NE_stack_0002_0003, 11; TIP_50ul_L_NE_stack_0002_0003, 12; TIP_50ul_L_NE_stack_0002_0003, 13; TIP_50ul_L_NE_stack_0002_0003, 14; TIP_50ul_L_NE_stack_0002_0003, 15; TIP_50ul_L_NE_stack_0002_0003, 16
+[2023-02-26 11:32:03,061] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:32:04,062] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0002, 9; ST_L_NE_stack_0001_0002, 10; ST_L_NE_stack_0001_0002, 11; ST_L_NE_stack_0001_0002, 12; ST_L_NE_stack_0001_0002, 13; ST_L_NE_stack_0001_0002, 14; ST_L_NE_stack_0001_0002, 15; ST_L_NE_stack_0001_0002, 16
+[2023-02-26 11:32:06,069] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:32:08,071] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0003, 17; TIP_50ul_L_NE_stack_0002_0003, 18; TIP_50ul_L_NE_stack_0002_0003, 19; TIP_50ul_L_NE_stack_0002_0003, 20; TIP_50ul_L_NE_stack_0002_0003, 21; TIP_50ul_L_NE_stack_0002_0003, 22; TIP_50ul_L_NE_stack_0002_0003, 23; TIP_50ul_L_NE_stack_0002_0003, 24
+[2023-02-26 11:32:09,080] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:32:11,083] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0002, 17; ST_L_NE_stack_0001_0002, 18; ST_L_NE_stack_0001_0002, 19; ST_L_NE_stack_0001_0002, 20; ST_L_NE_stack_0001_0002, 21; ST_L_NE_stack_0001_0002, 22; ST_L_NE_stack_0001_0002, 23; ST_L_NE_stack_0001_0002, 24
+[2023-02-26 11:32:12,090] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:32:13,091] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0003, 25; TIP_50ul_L_NE_stack_0002_0003, 26; TIP_50ul_L_NE_stack_0002_0003, 27; TIP_50ul_L_NE_stack_0002_0003, 28; TIP_50ul_L_NE_stack_0002_0003, 29; TIP_50ul_L_NE_stack_0002_0003, 30; TIP_50ul_L_NE_stack_0002_0003, 31; TIP_50ul_L_NE_stack_0002_0003, 32
+[2023-02-26 11:32:17,106] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:32:18,108] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0002, 25; ST_L_NE_stack_0001_0002, 26; ST_L_NE_stack_0001_0002, 27; ST_L_NE_stack_0001_0002, 28; ST_L_NE_stack_0001_0002, 29; ST_L_NE_stack_0001_0002, 30; ST_L_NE_stack_0001_0002, 31; ST_L_NE_stack_0001_0002, 32
+[2023-02-26 11:32:20,116] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:32:21,117] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0003, 33; TIP_50ul_L_NE_stack_0002_0003, 34; TIP_50ul_L_NE_stack_0002_0003, 35; TIP_50ul_L_NE_stack_0002_0003, 36; TIP_50ul_L_NE_stack_0002_0003, 37; TIP_50ul_L_NE_stack_0002_0003, 38; TIP_50ul_L_NE_stack_0002_0003, 39; TIP_50ul_L_NE_stack_0002_0003, 40
+[2023-02-26 11:32:22,127] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:32:24,129] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0002, 33; ST_L_NE_stack_0001_0002, 34; ST_L_NE_stack_0001_0002, 35; ST_L_NE_stack_0001_0002, 36; ST_L_NE_stack_0001_0002, 37; ST_L_NE_stack_0001_0002, 38; ST_L_NE_stack_0001_0002, 39; ST_L_NE_stack_0001_0002, 40
+[2023-02-26 11:32:25,137] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:32:26,138] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0003, 41; TIP_50ul_L_NE_stack_0002_0003, 42; TIP_50ul_L_NE_stack_0002_0003, 43; TIP_50ul_L_NE_stack_0002_0003, 44; TIP_50ul_L_NE_stack_0002_0003, 45; TIP_50ul_L_NE_stack_0002_0003, 46; TIP_50ul_L_NE_stack_0002_0003, 47; TIP_50ul_L_NE_stack_0002_0003, 48
+[2023-02-26 11:32:28,149] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:32:29,149] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0002, 41; ST_L_NE_stack_0001_0002, 42; ST_L_NE_stack_0001_0002, 43; ST_L_NE_stack_0001_0002, 44; ST_L_NE_stack_0001_0002, 45; ST_L_NE_stack_0001_0002, 46; ST_L_NE_stack_0001_0002, 47; ST_L_NE_stack_0001_0002, 48
+[2023-02-26 11:32:31,156] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:32:33,157] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0003, 49; TIP_50ul_L_NE_stack_0002_0003, 50; TIP_50ul_L_NE_stack_0002_0003, 51; TIP_50ul_L_NE_stack_0002_0003, 52; TIP_50ul_L_NE_stack_0002_0003, 53; TIP_50ul_L_NE_stack_0002_0003, 54; TIP_50ul_L_NE_stack_0002_0003, 55; TIP_50ul_L_NE_stack_0002_0003, 56
+[2023-02-26 11:32:34,167] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:32:36,169] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0002, 49; ST_L_NE_stack_0001_0002, 50; ST_L_NE_stack_0001_0002, 51; ST_L_NE_stack_0001_0002, 52; ST_L_NE_stack_0001_0002, 53; ST_L_NE_stack_0001_0002, 54; ST_L_NE_stack_0001_0002, 55; ST_L_NE_stack_0001_0002, 56
+[2023-02-26 11:32:37,177] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:32:38,178] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0003, 57; TIP_50ul_L_NE_stack_0002_0003, 58; TIP_50ul_L_NE_stack_0002_0003, 59; TIP_50ul_L_NE_stack_0002_0003, 60; TIP_50ul_L_NE_stack_0002_0003, 61; TIP_50ul_L_NE_stack_0002_0003, 62; TIP_50ul_L_NE_stack_0002_0003, 63; TIP_50ul_L_NE_stack_0002_0003, 64
+[2023-02-26 11:32:40,188] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:32:41,189] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0002, 57; ST_L_NE_stack_0001_0002, 58; ST_L_NE_stack_0001_0002, 59; ST_L_NE_stack_0001_0002, 60; ST_L_NE_stack_0001_0002, 61; ST_L_NE_stack_0001_0002, 62; ST_L_NE_stack_0001_0002, 63; ST_L_NE_stack_0001_0002, 64
+[2023-02-26 11:32:42,197] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:32:44,198] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0003, 65; TIP_50ul_L_NE_stack_0002_0003, 66; TIP_50ul_L_NE_stack_0002_0003, 67; TIP_50ul_L_NE_stack_0002_0003, 68; TIP_50ul_L_NE_stack_0002_0003, 69; TIP_50ul_L_NE_stack_0002_0003, 70; TIP_50ul_L_NE_stack_0002_0003, 71; TIP_50ul_L_NE_stack_0002_0003, 72
+[2023-02-26 11:32:46,209] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:32:47,210] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0002, 65; ST_L_NE_stack_0001_0002, 66; ST_L_NE_stack_0001_0002, 67; ST_L_NE_stack_0001_0002, 68; ST_L_NE_stack_0001_0002, 69; ST_L_NE_stack_0001_0002, 70; ST_L_NE_stack_0001_0002, 71; ST_L_NE_stack_0001_0002, 72
+[2023-02-26 11:32:49,217] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:32:50,218] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0003, 73; TIP_50ul_L_NE_stack_0002_0003, 74; TIP_50ul_L_NE_stack_0002_0003, 75; TIP_50ul_L_NE_stack_0002_0003, 76; TIP_50ul_L_NE_stack_0002_0003, 77; TIP_50ul_L_NE_stack_0002_0003, 78; TIP_50ul_L_NE_stack_0002_0003, 79; TIP_50ul_L_NE_stack_0002_0003, 80
+[2023-02-26 11:32:51,228] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:32:53,229] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0002, 73; ST_L_NE_stack_0001_0002, 74; ST_L_NE_stack_0001_0002, 75; ST_L_NE_stack_0001_0002, 76; ST_L_NE_stack_0001_0002, 77; ST_L_NE_stack_0001_0002, 78; ST_L_NE_stack_0001_0002, 79; ST_L_NE_stack_0001_0002, 80
+[2023-02-26 11:32:55,237] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:32:56,238] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0003, 81; TIP_50ul_L_NE_stack_0002_0003, 82; TIP_50ul_L_NE_stack_0002_0003, 83; TIP_50ul_L_NE_stack_0002_0003, 84; TIP_50ul_L_NE_stack_0002_0003, 85; TIP_50ul_L_NE_stack_0002_0003, 86; TIP_50ul_L_NE_stack_0002_0003, 87; TIP_50ul_L_NE_stack_0002_0003, 88
+[2023-02-26 11:32:58,249] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:32:59,250] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0002, 81; ST_L_NE_stack_0001_0002, 82; ST_L_NE_stack_0001_0002, 83; ST_L_NE_stack_0001_0002, 84; ST_L_NE_stack_0001_0002, 85; ST_L_NE_stack_0001_0002, 86; ST_L_NE_stack_0001_0002, 87; ST_L_NE_stack_0001_0002, 88
+[2023-02-26 11:33:00,257] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:33:01,257] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0003, 89; TIP_50ul_L_NE_stack_0002_0003, 90; TIP_50ul_L_NE_stack_0002_0003, 91; TIP_50ul_L_NE_stack_0002_0003, 92; TIP_50ul_L_NE_stack_0002_0003, 93; TIP_50ul_L_NE_stack_0002_0003, 94; TIP_50ul_L_NE_stack_0002_0003, 95; TIP_50ul_L_NE_stack_0002_0003, 96
+[2023-02-26 11:33:03,267] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:33:04,269] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0002, 89; ST_L_NE_stack_0001_0002, 90; ST_L_NE_stack_0001_0002, 91; ST_L_NE_stack_0001_0002, 92; ST_L_NE_stack_0001_0002, 93; ST_L_NE_stack_0001_0002, 94; ST_L_NE_stack_0001_0002, 95; ST_L_NE_stack_0001_0002, 96
+[2023-02-26 11:33:05,276] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:33:07,278] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0003_0003, 1; TIP_50ul_L_NE_stack_0003_0003, 2; TIP_50ul_L_NE_stack_0003_0003, 3; TIP_50ul_L_NE_stack_0003_0003, 4; TIP_50ul_L_NE_stack_0003_0003, 5; TIP_50ul_L_NE_stack_0003_0003, 6; TIP_50ul_L_NE_stack_0003_0003, 7; TIP_50ul_L_NE_stack_0003_0003, 8
+[2023-02-26 11:33:09,288] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:33:10,289] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0002, 1; ST_L_NE_stack_0002_0002, 2; ST_L_NE_stack_0002_0002, 3; ST_L_NE_stack_0002_0002, 4; ST_L_NE_stack_0002_0002, 5; ST_L_NE_stack_0002_0002, 6; ST_L_NE_stack_0002_0002, 7; ST_L_NE_stack_0002_0002, 8
+[2023-02-26 11:33:11,296] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:33:13,299] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0003_0003, 9; TIP_50ul_L_NE_stack_0003_0003, 10; TIP_50ul_L_NE_stack_0003_0003, 11; TIP_50ul_L_NE_stack_0003_0003, 12; TIP_50ul_L_NE_stack_0003_0003, 13; TIP_50ul_L_NE_stack_0003_0003, 14; TIP_50ul_L_NE_stack_0003_0003, 15; TIP_50ul_L_NE_stack_0003_0003, 16
+[2023-02-26 11:33:15,309] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:33:16,311] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0002, 9; ST_L_NE_stack_0002_0002, 10; ST_L_NE_stack_0002_0002, 11; ST_L_NE_stack_0002_0002, 12; ST_L_NE_stack_0002_0002, 13; ST_L_NE_stack_0002_0002, 14; ST_L_NE_stack_0002_0002, 15; ST_L_NE_stack_0002_0002, 16
+[2023-02-26 11:33:17,318] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:33:19,319] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0003_0003, 17; TIP_50ul_L_NE_stack_0003_0003, 18; TIP_50ul_L_NE_stack_0003_0003, 19; TIP_50ul_L_NE_stack_0003_0003, 20; TIP_50ul_L_NE_stack_0003_0003, 21; TIP_50ul_L_NE_stack_0003_0003, 22; TIP_50ul_L_NE_stack_0003_0003, 23; TIP_50ul_L_NE_stack_0003_0003, 24
+[2023-02-26 11:33:21,330] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:33:22,330] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0002, 17; ST_L_NE_stack_0002_0002, 18; ST_L_NE_stack_0002_0002, 19; ST_L_NE_stack_0002_0002, 20; ST_L_NE_stack_0002_0002, 21; ST_L_NE_stack_0002_0002, 22; ST_L_NE_stack_0002_0002, 23; ST_L_NE_stack_0002_0002, 24
+[2023-02-26 11:33:24,341] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:33:25,342] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0003_0003, 25; TIP_50ul_L_NE_stack_0003_0003, 26; TIP_50ul_L_NE_stack_0003_0003, 27; TIP_50ul_L_NE_stack_0003_0003, 28; TIP_50ul_L_NE_stack_0003_0003, 29; TIP_50ul_L_NE_stack_0003_0003, 30; TIP_50ul_L_NE_stack_0003_0003, 31; TIP_50ul_L_NE_stack_0003_0003, 32
+[2023-02-26 11:33:26,352] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:33:27,353] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0002, 25; ST_L_NE_stack_0002_0002, 26; ST_L_NE_stack_0002_0002, 27; ST_L_NE_stack_0002_0002, 28; ST_L_NE_stack_0002_0002, 29; ST_L_NE_stack_0002_0002, 30; ST_L_NE_stack_0002_0002, 31; ST_L_NE_stack_0002_0002, 32
+[2023-02-26 11:33:29,362] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:33:31,364] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0003_0003, 33; TIP_50ul_L_NE_stack_0003_0003, 34; TIP_50ul_L_NE_stack_0003_0003, 35; TIP_50ul_L_NE_stack_0003_0003, 36; TIP_50ul_L_NE_stack_0003_0003, 37; TIP_50ul_L_NE_stack_0003_0003, 38; TIP_50ul_L_NE_stack_0003_0003, 39; TIP_50ul_L_NE_stack_0003_0003, 40
+[2023-02-26 11:33:32,382] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:33:33,384] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0002, 33; ST_L_NE_stack_0002_0002, 34; ST_L_NE_stack_0002_0002, 35; ST_L_NE_stack_0002_0002, 36; ST_L_NE_stack_0002_0002, 37; ST_L_NE_stack_0002_0002, 38; ST_L_NE_stack_0002_0002, 39; ST_L_NE_stack_0002_0002, 40
+[2023-02-26 11:33:35,396] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:33:36,397] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0003_0003, 41; TIP_50ul_L_NE_stack_0003_0003, 42; TIP_50ul_L_NE_stack_0003_0003, 43; TIP_50ul_L_NE_stack_0003_0003, 44; TIP_50ul_L_NE_stack_0003_0003, 45; TIP_50ul_L_NE_stack_0003_0003, 46; TIP_50ul_L_NE_stack_0003_0003, 47; TIP_50ul_L_NE_stack_0003_0003, 48
+[2023-02-26 11:33:37,406] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:33:38,408] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0002, 41; ST_L_NE_stack_0002_0002, 42; ST_L_NE_stack_0002_0002, 43; ST_L_NE_stack_0002_0002, 44; ST_L_NE_stack_0002_0002, 45; ST_L_NE_stack_0002_0002, 46; ST_L_NE_stack_0002_0002, 47; ST_L_NE_stack_0002_0002, 48
+[2023-02-26 11:33:40,415] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:33:42,416] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0003_0003, 49; TIP_50ul_L_NE_stack_0003_0003, 50; TIP_50ul_L_NE_stack_0003_0003, 51; TIP_50ul_L_NE_stack_0003_0003, 52; TIP_50ul_L_NE_stack_0003_0003, 53; TIP_50ul_L_NE_stack_0003_0003, 54; TIP_50ul_L_NE_stack_0003_0003, 55; TIP_50ul_L_NE_stack_0003_0003, 56
+[2023-02-26 11:33:43,427] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:33:44,428] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0002, 49; ST_L_NE_stack_0002_0002, 50; ST_L_NE_stack_0002_0002, 51; ST_L_NE_stack_0002_0002, 52; ST_L_NE_stack_0002_0002, 53; ST_L_NE_stack_0002_0002, 54; ST_L_NE_stack_0002_0002, 55; ST_L_NE_stack_0002_0002, 56
+[2023-02-26 11:33:46,436] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:33:47,436] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0003_0003, 57; TIP_50ul_L_NE_stack_0003_0003, 58; TIP_50ul_L_NE_stack_0003_0003, 59; TIP_50ul_L_NE_stack_0003_0003, 60; TIP_50ul_L_NE_stack_0003_0003, 61; TIP_50ul_L_NE_stack_0003_0003, 62; TIP_50ul_L_NE_stack_0003_0003, 63; TIP_50ul_L_NE_stack_0003_0003, 64
+[2023-02-26 11:33:48,445] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:33:49,447] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0002, 57; ST_L_NE_stack_0002_0002, 58; ST_L_NE_stack_0002_0002, 59; ST_L_NE_stack_0002_0002, 60; ST_L_NE_stack_0002_0002, 61; ST_L_NE_stack_0002_0002, 62; ST_L_NE_stack_0002_0002, 63; ST_L_NE_stack_0002_0002, 64
+[2023-02-26 11:33:51,454] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:33:52,455] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0003_0003, 65; TIP_50ul_L_NE_stack_0003_0003, 66; TIP_50ul_L_NE_stack_0003_0003, 67; TIP_50ul_L_NE_stack_0003_0003, 68; TIP_50ul_L_NE_stack_0003_0003, 69; TIP_50ul_L_NE_stack_0003_0003, 70; TIP_50ul_L_NE_stack_0003_0003, 71; TIP_50ul_L_NE_stack_0003_0003, 72
+[2023-02-26 11:33:53,464] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:33:54,466] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0002, 65; ST_L_NE_stack_0002_0002, 66; ST_L_NE_stack_0002_0002, 67; ST_L_NE_stack_0002_0002, 68; ST_L_NE_stack_0002_0002, 69; ST_L_NE_stack_0002_0002, 70; ST_L_NE_stack_0002_0002, 71; ST_L_NE_stack_0002_0002, 72
+[2023-02-26 11:33:56,474] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:33:58,475] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0003_0003, 73; TIP_50ul_L_NE_stack_0003_0003, 74; TIP_50ul_L_NE_stack_0003_0003, 75; TIP_50ul_L_NE_stack_0003_0003, 76; TIP_50ul_L_NE_stack_0003_0003, 77; TIP_50ul_L_NE_stack_0003_0003, 78; TIP_50ul_L_NE_stack_0003_0003, 79; TIP_50ul_L_NE_stack_0003_0003, 80
+[2023-02-26 11:33:59,484] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:34:00,485] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0002, 73; ST_L_NE_stack_0002_0002, 74; ST_L_NE_stack_0002_0002, 75; ST_L_NE_stack_0002_0002, 76; ST_L_NE_stack_0002_0002, 77; ST_L_NE_stack_0002_0002, 78; ST_L_NE_stack_0002_0002, 79; ST_L_NE_stack_0002_0002, 80
+[2023-02-26 11:34:02,493] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:34:03,494] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0003_0003, 81; TIP_50ul_L_NE_stack_0003_0003, 82; TIP_50ul_L_NE_stack_0003_0003, 83; TIP_50ul_L_NE_stack_0003_0003, 84; TIP_50ul_L_NE_stack_0003_0003, 85; TIP_50ul_L_NE_stack_0003_0003, 86; TIP_50ul_L_NE_stack_0003_0003, 87; TIP_50ul_L_NE_stack_0003_0003, 88
+[2023-02-26 11:34:04,504] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:34:05,506] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0002, 81; ST_L_NE_stack_0002_0002, 82; ST_L_NE_stack_0002_0002, 83; ST_L_NE_stack_0002_0002, 84; ST_L_NE_stack_0002_0002, 85; ST_L_NE_stack_0002_0002, 86; ST_L_NE_stack_0002_0002, 87; ST_L_NE_stack_0002_0002, 88
+[2023-02-26 11:34:07,516] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:34:08,517] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0003_0003, 89; TIP_50ul_L_NE_stack_0003_0003, 90; TIP_50ul_L_NE_stack_0003_0003, 91; TIP_50ul_L_NE_stack_0003_0003, 92; TIP_50ul_L_NE_stack_0003_0003, 93; TIP_50ul_L_NE_stack_0003_0003, 94; TIP_50ul_L_NE_stack_0003_0003, 95; TIP_50ul_L_NE_stack_0003_0003, 96
+[2023-02-26 11:34:09,527] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:34:10,528] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0002, 89; ST_L_NE_stack_0002_0002, 90; ST_L_NE_stack_0002_0002, 91; ST_L_NE_stack_0002_0002, 92; ST_L_NE_stack_0002_0002, 93; ST_L_NE_stack_0002_0002, 94; ST_L_NE_stack_0002_0002, 95; ST_L_NE_stack_0002_0002, 96
+[2023-02-26 11:34:12,536] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:34:14,537] root INFO get_plate: Getting plate TIP_50ul_L_NE_stack_0001_0003
+[2023-02-26 11:34:17,542] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 11:34:19,542] root INFO get_plate: Getting plate TIP_50ul_L_NE_stack_0002_0003
+[2023-02-26 11:34:20,544] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 11:34:21,544] root INFO get_plate: Getting plate TIP_50ul_L_NE_stack_0003_0003
+[2023-02-26 11:34:23,546] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 11:34:24,546] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0002, 1; TIP_50ul_L_NE_stack_0001_0002, 2; TIP_50ul_L_NE_stack_0001_0002, 3; TIP_50ul_L_NE_stack_0001_0002, 4; TIP_50ul_L_NE_stack_0001_0002, 5; TIP_50ul_L_NE_stack_0001_0002, 6; TIP_50ul_L_NE_stack_0001_0002, 7; TIP_50ul_L_NE_stack_0001_0002, 8
+[2023-02-26 11:34:26,558] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:34:27,559] root INFO get_plate: Getting plate ST_L_NE_stack_0001_0002
+[2023-02-26 11:34:28,560] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 11:34:30,561] root INFO get_plate: Getting plate ST_L_NE_stack_0002_0002
+[2023-02-26 11:34:31,563] root INFO place_plate: Placing plate Waste_NTR50
+[2023-02-26 11:34:32,564] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0001, 1; ST_L_NE_stack_0001_0001, 2; ST_L_NE_stack_0001_0001, 3; ST_L_NE_stack_0001_0001, 4; ST_L_NE_stack_0001_0001, 5; ST_L_NE_stack_0001_0001, 6; ST_L_NE_stack_0001_0001, 7; ST_L_NE_stack_0001_0001, 8
+[2023-02-26 11:34:34,572] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:34:35,573] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0002, 9; TIP_50ul_L_NE_stack_0001_0002, 10; TIP_50ul_L_NE_stack_0001_0002, 11; TIP_50ul_L_NE_stack_0001_0002, 12; TIP_50ul_L_NE_stack_0001_0002, 13; TIP_50ul_L_NE_stack_0001_0002, 14; TIP_50ul_L_NE_stack_0001_0002, 15; TIP_50ul_L_NE_stack_0001_0002, 16
+[2023-02-26 11:34:36,583] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:34:37,584] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0001, 9; ST_L_NE_stack_0001_0001, 10; ST_L_NE_stack_0001_0001, 11; ST_L_NE_stack_0001_0001, 12; ST_L_NE_stack_0001_0001, 13; ST_L_NE_stack_0001_0001, 14; ST_L_NE_stack_0001_0001, 15; ST_L_NE_stack_0001_0001, 16
+[2023-02-26 11:34:39,591] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:34:40,593] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0002, 17; TIP_50ul_L_NE_stack_0001_0002, 18; TIP_50ul_L_NE_stack_0001_0002, 19; TIP_50ul_L_NE_stack_0001_0002, 20; TIP_50ul_L_NE_stack_0001_0002, 21; TIP_50ul_L_NE_stack_0001_0002, 22; TIP_50ul_L_NE_stack_0001_0002, 23; TIP_50ul_L_NE_stack_0001_0002, 24
+[2023-02-26 11:34:41,603] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:34:42,603] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0001, 17; ST_L_NE_stack_0001_0001, 18; ST_L_NE_stack_0001_0001, 19; ST_L_NE_stack_0001_0001, 20; ST_L_NE_stack_0001_0001, 21; ST_L_NE_stack_0001_0001, 22; ST_L_NE_stack_0001_0001, 23; ST_L_NE_stack_0001_0001, 24
+[2023-02-26 11:34:44,612] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:34:45,613] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0002, 25; TIP_50ul_L_NE_stack_0001_0002, 26; TIP_50ul_L_NE_stack_0001_0002, 27; TIP_50ul_L_NE_stack_0001_0002, 28; TIP_50ul_L_NE_stack_0001_0002, 29; TIP_50ul_L_NE_stack_0001_0002, 30; TIP_50ul_L_NE_stack_0001_0002, 31; TIP_50ul_L_NE_stack_0001_0002, 32
+[2023-02-26 11:34:46,623] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:34:48,626] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0001, 25; ST_L_NE_stack_0001_0001, 26; ST_L_NE_stack_0001_0001, 27; ST_L_NE_stack_0001_0001, 28; ST_L_NE_stack_0001_0001, 29; ST_L_NE_stack_0001_0001, 30; ST_L_NE_stack_0001_0001, 31; ST_L_NE_stack_0001_0001, 32
+[2023-02-26 11:34:49,634] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:34:50,635] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0002, 33; TIP_50ul_L_NE_stack_0001_0002, 34; TIP_50ul_L_NE_stack_0001_0002, 35; TIP_50ul_L_NE_stack_0001_0002, 36; TIP_50ul_L_NE_stack_0001_0002, 37; TIP_50ul_L_NE_stack_0001_0002, 38; TIP_50ul_L_NE_stack_0001_0002, 39; TIP_50ul_L_NE_stack_0001_0002, 40
+[2023-02-26 11:34:52,645] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:34:54,648] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0001, 33; ST_L_NE_stack_0001_0001, 34; ST_L_NE_stack_0001_0001, 35; ST_L_NE_stack_0001_0001, 36; ST_L_NE_stack_0001_0001, 37; ST_L_NE_stack_0001_0001, 38; ST_L_NE_stack_0001_0001, 39; ST_L_NE_stack_0001_0001, 40
+[2023-02-26 11:34:55,655] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:34:56,656] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0002, 41; TIP_50ul_L_NE_stack_0001_0002, 42; TIP_50ul_L_NE_stack_0001_0002, 43; TIP_50ul_L_NE_stack_0001_0002, 44; TIP_50ul_L_NE_stack_0001_0002, 45; TIP_50ul_L_NE_stack_0001_0002, 46; TIP_50ul_L_NE_stack_0001_0002, 47; TIP_50ul_L_NE_stack_0001_0002, 48
+[2023-02-26 11:34:58,673] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:35:00,674] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0001, 41; ST_L_NE_stack_0001_0001, 42; ST_L_NE_stack_0001_0001, 43; ST_L_NE_stack_0001_0001, 44; ST_L_NE_stack_0001_0001, 45; ST_L_NE_stack_0001_0001, 46; ST_L_NE_stack_0001_0001, 47; ST_L_NE_stack_0001_0001, 48
+[2023-02-26 11:35:01,681] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:35:02,682] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0002, 49; TIP_50ul_L_NE_stack_0001_0002, 50; TIP_50ul_L_NE_stack_0001_0002, 51; TIP_50ul_L_NE_stack_0001_0002, 52; TIP_50ul_L_NE_stack_0001_0002, 53; TIP_50ul_L_NE_stack_0001_0002, 54; TIP_50ul_L_NE_stack_0001_0002, 55; TIP_50ul_L_NE_stack_0001_0002, 56
+[2023-02-26 11:35:04,693] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:35:05,693] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0001, 49; ST_L_NE_stack_0001_0001, 50; ST_L_NE_stack_0001_0001, 51; ST_L_NE_stack_0001_0001, 52; ST_L_NE_stack_0001_0001, 53; ST_L_NE_stack_0001_0001, 54; ST_L_NE_stack_0001_0001, 55; ST_L_NE_stack_0001_0001, 56
+[2023-02-26 11:35:06,701] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:35:07,701] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0002, 57; TIP_50ul_L_NE_stack_0001_0002, 58; TIP_50ul_L_NE_stack_0001_0002, 59; TIP_50ul_L_NE_stack_0001_0002, 60; TIP_50ul_L_NE_stack_0001_0002, 61; TIP_50ul_L_NE_stack_0001_0002, 62; TIP_50ul_L_NE_stack_0001_0002, 63; TIP_50ul_L_NE_stack_0001_0002, 64
+[2023-02-26 11:35:09,712] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:35:10,713] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0001, 57; ST_L_NE_stack_0001_0001, 58; ST_L_NE_stack_0001_0001, 59; ST_L_NE_stack_0001_0001, 60; ST_L_NE_stack_0001_0001, 61; ST_L_NE_stack_0001_0001, 62; ST_L_NE_stack_0001_0001, 63; ST_L_NE_stack_0001_0001, 64
+[2023-02-26 11:35:11,720] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:35:12,721] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0002, 65; TIP_50ul_L_NE_stack_0001_0002, 66; TIP_50ul_L_NE_stack_0001_0002, 67; TIP_50ul_L_NE_stack_0001_0002, 68; TIP_50ul_L_NE_stack_0001_0002, 69; TIP_50ul_L_NE_stack_0001_0002, 70; TIP_50ul_L_NE_stack_0001_0002, 71; TIP_50ul_L_NE_stack_0001_0002, 72
+[2023-02-26 11:35:14,729] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:35:15,731] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0001, 65; ST_L_NE_stack_0001_0001, 66; ST_L_NE_stack_0001_0001, 67; ST_L_NE_stack_0001_0001, 68; ST_L_NE_stack_0001_0001, 69; ST_L_NE_stack_0001_0001, 70; ST_L_NE_stack_0001_0001, 71; ST_L_NE_stack_0001_0001, 72
+[2023-02-26 11:35:16,738] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:35:17,739] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0002, 73; TIP_50ul_L_NE_stack_0001_0002, 74; TIP_50ul_L_NE_stack_0001_0002, 75; TIP_50ul_L_NE_stack_0001_0002, 76; TIP_50ul_L_NE_stack_0001_0002, 77; TIP_50ul_L_NE_stack_0001_0002, 78; TIP_50ul_L_NE_stack_0001_0002, 79; TIP_50ul_L_NE_stack_0001_0002, 80
+[2023-02-26 11:35:19,749] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:35:20,751] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0001, 73; ST_L_NE_stack_0001_0001, 74; ST_L_NE_stack_0001_0001, 75; ST_L_NE_stack_0001_0001, 76; ST_L_NE_stack_0001_0001, 77; ST_L_NE_stack_0001_0001, 78; ST_L_NE_stack_0001_0001, 79; ST_L_NE_stack_0001_0001, 80
+[2023-02-26 11:35:21,758] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:35:22,759] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0002, 81; TIP_50ul_L_NE_stack_0001_0002, 82; TIP_50ul_L_NE_stack_0001_0002, 83; TIP_50ul_L_NE_stack_0001_0002, 84; TIP_50ul_L_NE_stack_0001_0002, 85; TIP_50ul_L_NE_stack_0001_0002, 86; TIP_50ul_L_NE_stack_0001_0002, 87; TIP_50ul_L_NE_stack_0001_0002, 88
+[2023-02-26 11:35:24,769] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:35:25,771] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0001, 81; ST_L_NE_stack_0001_0001, 82; ST_L_NE_stack_0001_0001, 83; ST_L_NE_stack_0001_0001, 84; ST_L_NE_stack_0001_0001, 85; ST_L_NE_stack_0001_0001, 86; ST_L_NE_stack_0001_0001, 87; ST_L_NE_stack_0001_0001, 88
+[2023-02-26 11:35:26,778] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:35:27,778] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0001_0002, 89; TIP_50ul_L_NE_stack_0001_0002, 90; TIP_50ul_L_NE_stack_0001_0002, 91; TIP_50ul_L_NE_stack_0001_0002, 92; TIP_50ul_L_NE_stack_0001_0002, 93; TIP_50ul_L_NE_stack_0001_0002, 94; TIP_50ul_L_NE_stack_0001_0002, 95; TIP_50ul_L_NE_stack_0001_0002, 96
+[2023-02-26 11:35:29,789] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:35:30,790] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0001_0001, 89; ST_L_NE_stack_0001_0001, 90; ST_L_NE_stack_0001_0001, 91; ST_L_NE_stack_0001_0001, 92; ST_L_NE_stack_0001_0001, 93; ST_L_NE_stack_0001_0001, 94; ST_L_NE_stack_0001_0001, 95; ST_L_NE_stack_0001_0001, 96
+[2023-02-26 11:35:31,797] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:35:32,798] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0002, 1; TIP_50ul_L_NE_stack_0002_0002, 2; TIP_50ul_L_NE_stack_0002_0002, 3; TIP_50ul_L_NE_stack_0002_0002, 4; TIP_50ul_L_NE_stack_0002_0002, 5; TIP_50ul_L_NE_stack_0002_0002, 6; TIP_50ul_L_NE_stack_0002_0002, 7; TIP_50ul_L_NE_stack_0002_0002, 8
+[2023-02-26 11:35:34,809] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:35:35,809] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0001, 1; ST_L_NE_stack_0002_0001, 2; ST_L_NE_stack_0002_0001, 3; ST_L_NE_stack_0002_0001, 4; ST_L_NE_stack_0002_0001, 5; ST_L_NE_stack_0002_0001, 6; ST_L_NE_stack_0002_0001, 7; ST_L_NE_stack_0002_0001, 8
+[2023-02-26 11:35:36,815] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:35:38,819] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0002, 9; TIP_50ul_L_NE_stack_0002_0002, 10; TIP_50ul_L_NE_stack_0002_0002, 11; TIP_50ul_L_NE_stack_0002_0002, 12; TIP_50ul_L_NE_stack_0002_0002, 13; TIP_50ul_L_NE_stack_0002_0002, 14; TIP_50ul_L_NE_stack_0002_0002, 15; TIP_50ul_L_NE_stack_0002_0002, 16
+[2023-02-26 11:35:40,829] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:35:41,830] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0001, 9; ST_L_NE_stack_0002_0001, 10; ST_L_NE_stack_0002_0001, 11; ST_L_NE_stack_0002_0001, 12; ST_L_NE_stack_0002_0001, 13; ST_L_NE_stack_0002_0001, 14; ST_L_NE_stack_0002_0001, 15; ST_L_NE_stack_0002_0001, 16
+[2023-02-26 11:35:42,837] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:35:44,838] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0002, 17; TIP_50ul_L_NE_stack_0002_0002, 18; TIP_50ul_L_NE_stack_0002_0002, 19; TIP_50ul_L_NE_stack_0002_0002, 20; TIP_50ul_L_NE_stack_0002_0002, 21; TIP_50ul_L_NE_stack_0002_0002, 22; TIP_50ul_L_NE_stack_0002_0002, 23; TIP_50ul_L_NE_stack_0002_0002, 24
+[2023-02-26 11:35:46,848] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:35:47,849] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0001, 17; ST_L_NE_stack_0002_0001, 18; ST_L_NE_stack_0002_0001, 19; ST_L_NE_stack_0002_0001, 20; ST_L_NE_stack_0002_0001, 21; ST_L_NE_stack_0002_0001, 22; ST_L_NE_stack_0002_0001, 23; ST_L_NE_stack_0002_0001, 24
+[2023-02-26 11:35:48,857] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:35:50,859] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0002, 25; TIP_50ul_L_NE_stack_0002_0002, 26; TIP_50ul_L_NE_stack_0002_0002, 27; TIP_50ul_L_NE_stack_0002_0002, 28; TIP_50ul_L_NE_stack_0002_0002, 29; TIP_50ul_L_NE_stack_0002_0002, 30; TIP_50ul_L_NE_stack_0002_0002, 31; TIP_50ul_L_NE_stack_0002_0002, 32
+[2023-02-26 11:35:52,869] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:35:53,870] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0001, 25; ST_L_NE_stack_0002_0001, 26; ST_L_NE_stack_0002_0001, 27; ST_L_NE_stack_0002_0001, 28; ST_L_NE_stack_0002_0001, 29; ST_L_NE_stack_0002_0001, 30; ST_L_NE_stack_0002_0001, 31; ST_L_NE_stack_0002_0001, 32
+[2023-02-26 11:35:54,877] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:35:56,880] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0002, 33; TIP_50ul_L_NE_stack_0002_0002, 34; TIP_50ul_L_NE_stack_0002_0002, 35; TIP_50ul_L_NE_stack_0002_0002, 36; TIP_50ul_L_NE_stack_0002_0002, 37; TIP_50ul_L_NE_stack_0002_0002, 38; TIP_50ul_L_NE_stack_0002_0002, 39; TIP_50ul_L_NE_stack_0002_0002, 40
+[2023-02-26 11:35:58,890] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:35:59,892] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0001, 33; ST_L_NE_stack_0002_0001, 34; ST_L_NE_stack_0002_0001, 35; ST_L_NE_stack_0002_0001, 36; ST_L_NE_stack_0002_0001, 37; ST_L_NE_stack_0002_0001, 38; ST_L_NE_stack_0002_0001, 39; ST_L_NE_stack_0002_0001, 40
+[2023-02-26 11:36:00,899] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:36:02,902] root INFO tip_pick_up: Pick up tips at TIP_50ul_L_NE_stack_0002_0002, 41; TIP_50ul_L_NE_stack_0002_0002, 42; TIP_50ul_L_NE_stack_0002_0002, 43; TIP_50ul_L_NE_stack_0002_0002, 44; TIP_50ul_L_NE_stack_0002_0002, 45; TIP_50ul_L_NE_stack_0002_0002, 46; TIP_50ul_L_NE_stack_0002_0002, 47; TIP_50ul_L_NE_stack_0002_0002, 48
+[2023-02-26 11:36:04,913] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:36:05,913] root INFO tip_pick_up: Pick up tips at ST_L_NE_stack_0002_0001, 41; ST_L_NE_stack_0002_0001, 42; ST_L_NE_stack_0002_0001, 43; ST_L_NE_stack_0002_0001, 44; ST_L_NE_stack_0002_0001, 45; ST_L_NE_stack_0002_0001, 46; ST_L_NE_stack_0002_0001, 47; ST_L_NE_stack_0002_0001, 48
+[2023-02-26 11:36:07,926] root INFO tip_eject: Eject tips to default waste
+[2023-02-26 11:36:08,927] pyhamilton.interface INFO sending end run command to simulator
+[2023-02-26 11:36:10,428] pyhamilton.interface ERROR HamiltonTimeoutError('Timed out after 1.5 sec while waiting for response id 0x0')
+[2023-02-26 11:36:10,428] pyhamilton.interface INFO disconnected from server
+[2023-02-26 11:36:10,529] pyhamilton.interface INFO server did not exit yet, sending dummy request to exit its loop
+[2023-02-26 11:36:10,529] urllib3.util.retry DEBUG Converted retries value: 20 -> Retry(total=20, connect=None, read=None, redirect=None, status=None)
+[2023-02-26 11:36:10,536] urllib3.connectionpool DEBUG Starting new HTTP connection (1): 127.0.0.1:3221
+[2023-02-26 11:36:10,538] urllib3.connectionpool DEBUG http://127.0.0.1:3221 "GET / HTTP/1.1" 200 None
+[2023-02-26 11:36:10,538] pyhamilton.interface INFO dummy get request sent to server
+[2023-02-26 11:36:10,538] pyhamilton.interface INFO server thread exited
